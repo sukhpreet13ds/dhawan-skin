@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* Load Georgia Fonts */
+@font-face {
+    font-family: 'GeorgiaCustom';
+    src: url('../georgia/georgia.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GeorgiaCustom';
+    src: url('../georgia/georgiab.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GeorgiaCustom';
+    src: url('../georgia/georgiai.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'GeorgiaCustom';
+    src: url('../georgia/georgiaz.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+}
+
+:root {
+    --button-color: #CC1E6D;
+    --shade-color: #0B2D27;
+    --golden-color: #C7A86B;
+    --font-inter: 'Inter', sans-serif;
+    --font-georgia: 'GeorgiaCustom', Georgia, serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-inter);
+    background-color: #ffffff;
+    color: #1f2937;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* ==========================================================================
+   Header & Navigation
+   ========================================================================== */
+.header {
+    width: 100%;
+    background-color: #ffffff;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-container {
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 16px 36px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-brand {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.nav-logo {
+    height: 70px;
+    width: auto;
+    object-fit: contain;
+    display: block;
+}
+
+.nav-toggle {
+    display: none;
+    background: transparent;
+    border: none;
+    font-size: 22px;
+    color: var(--shade-color);
+    cursor: pointer;
+    padding: 8px;
+    transition: color 0.25s ease;
+}
+
+.nav-toggle:hover {
+    color: #0B2D27;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.nav-link {
+    position: relative;
+    text-decoration: none;
+    color: #26312E;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 6px 0;
+    display: inline-block;
+    transition: color 0.25s ease;
+}
+
+/* Animated Bottom Border */
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2.5px;
+    background-color: var(--button-color);
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border-radius: 2px;
+}
+
+.nav-link:hover {
+    color: var(--button-color);
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+    transform: scaleX(1);
+}
+
+.nav-link.active {
+    color: var(--button-color);
+    font-weight: 600;
+}
+
+.nav-mobile-action {
+    display: none;
+}
+
+.nav-action {
+    display: flex;
+    align-items: center;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    border: none;
+    font-family: var(--font-inter);
+}
+
+.btn-nav {
+    background-color: var(--button-color);
+    color: #ffffff;
+    font-size: 14.5px;
+    font-weight: 600;
+    padding: 11px 26px;
+    box-shadow: 0 4px 14px rgba(204, 30, 109, 0.25);
+}
+
+.btn-nav:hover {
+    opacity: 0.92;
+    transform: translateY(-1px);
+    box-shadow: 0 6px 18px rgba(204, 30, 109, 0.35);
+}
+
+/* ==========================================================================
+   Hero Section
+   ========================================================================== */
+.hero-section {
+    width: 100%;
+    padding: 10px 0 28px;
+}
+
+.hero-container {
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 0 36px;
+}
+
+.hero-card {
+    position: relative;
+    border-radius: 28px;
+    overflow: hidden;
+    background-color: var(--shade-color);
+    background-image: 
+        linear-gradient(
+            90deg,
+            var(--shade-color) 0%,
+            var(--shade-color) 32%,
+            rgba(11, 45, 39, 0.95) 42%,
+            rgba(11, 45, 39, 0.62) 55%,
+            rgba(11, 45, 39, 0.15) 68%,
+            transparent 90%
+        ),
+        url('../assets/hero-bg.png');
+    background-position: right center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 790px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 56px 52px 28px;
+}
+
+.hero-content {
+    max-width: 580px;
+    position: relative;
+    z-index: 2;
+}
+
+.hero-tagline {
+    display: inline-block;
+    color: var(--golden-color);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.hero-title {
+    font-family: var(--font-georgia);
+    font-size: 84px;
+    line-height: 1.15;
+    font-weight: 400;
+    color: #ffffff;
+    margin-bottom: 22px;
+    letter-spacing: -0.5px;
+}
+
+.hero-desc {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 17.5px;
+    line-height: 1.6;
+    max-width: 480px;
+    margin-bottom: 34px;
+    font-weight: 400;
+}
+
+.hero-actions {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.btn-white {
+    background-color: #ffffff;
+    color: #0b2d27;
+    font-weight: 600;
+    font-size: 16.5px;
+    padding: 13px 26px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+}
+
+.btn-white:hover {
+    background-color: #f3f4f6;
+    transform: translateY(-1px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.22);
+}
+
+.btn-outline {
+    background-color: rgba(255, 255, 255, 0.08);
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 16.5px;
+    padding: 12px 24px;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    backdrop-filter: blur(6px);
+}
+
+.btn-outline:hover {
+    background-color: rgba(255, 255, 255, 0.18);
+    border-color: rgba(255, 255, 255, 0.65);
+    transform: translateY(-1px);
+}
+
+/* ==========================================================================
+   Hero Features Bar (Docked Bottom)
+   ========================================================================== */
+.hero-features-bar {
+    margin-top: 48px;
+    background-color: #ffffff;
+    border-radius: 14px;
+    padding: 16px 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    position: relative;
+    z-index: 2;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex: 1;
+    justify-content: center;
+}
+
+.feature-icon {
+    color: var(--shade-color);
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.feature-text {
+    font-size: 16px;
+    font-weight: 700;
+    color: #1a2421;
+    white-space: nowrap;
+}
+
+.feature-divider {
+    width: 1px;
+    height: 20px;
+    background-color: #e5e7eb;
+    margin: 0 12px;
+}

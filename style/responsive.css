@@ -1,0 +1,347 @@
+/* EXTRA EXTRA LARGE DESKTOPS */
+
+
+/* EXTRA LARGE DESKTOPS */
+@media (min-width: 1440px) and (max-width: 1799px) {
+    .hero-card {
+        min-height: 680px;
+    }
+
+    .hero-title {
+        font-size: 60px;
+    }
+}
+
+/* LARGE DESKTOPS */
+@media (min-width: 1200px) and (max-width: 1439px) {
+
+    .nav-container,
+    .hero-container {
+        padding-left: 28px;
+        padding-right: 28px;
+    }
+
+    .nav-logo {
+        font-size: 60px;
+    }
+
+    .nav-list {
+        gap: 24px;
+    }
+
+    .nav-link {
+        font-size: 18px;
+    }
+
+    .hero-card {
+        padding: 48px 44px 24px;
+        min-height: 750px;
+    }
+
+    .hero-title {
+        font-size: 62px;
+    }
+
+    .hero-desc {
+        font-size: 18px;
+    }
+
+    .hero-features-bar {
+        padding: 14px 24px;
+    }
+
+    .feature-text {
+        font-size: 15.5px;
+    }
+}
+
+/* 2. MINI DESKTOPS & LANDSCAPE TABLETS (Together) */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .nav-logo {
+        height: 50px;
+    }
+
+    .nav-container,
+    .hero-container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .nav-list {
+        gap: 18px;
+    }
+
+    .nav-link {
+        font-size: 14px;
+    }
+
+    .btn-nav {
+        padding: 9px 20px;
+        font-size: 13.5px;
+    }
+
+    .hero-card {
+        padding: 42px 36px 22px;
+        min-height: 520px;
+    }
+
+    .hero-title {
+        font-size: 48px;
+        margin-bottom: 18px;
+    }
+
+    .hero-desc {
+        font-size: 16.5px;
+        max-width: 440px;
+        margin-bottom: 26px;
+    }
+
+    .hero-features-bar {
+        padding: 14px 18px;
+        margin-top: 36px;
+    }
+
+    .feature-item {
+        gap: 8px;
+    }
+
+    .feature-text {
+        font-size: 12.5px;
+    }
+
+    .feature-divider {
+        margin: 0 8px;
+    }
+
+    .btn-white,
+    .btn-outline {
+        font-size: 14.5px;
+    }
+}
+
+/* 3. PORTRAIT TABLETS (Separate) */
+@media (min-width: 577px) and (max-width: 991px) {
+    .nav-container {
+        padding: 14px 24px;
+        position: relative;
+    }
+
+    .nav-toggle {
+        display: block;
+    }
+
+    .nav-action {
+        display: none;
+    }
+
+    .nav-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #ffffff;
+        flex-direction: column;
+        padding: 24px;
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+        border-top: 1px solid #f1f1f1;
+        z-index: 99;
+    }
+
+    .nav-menu.open {
+        display: flex;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 18px;
+        width: 100%;
+    }
+
+    .nav-mobile-action {
+        display: block;
+        width: 100%;
+        margin-top: 20px;
+        padding-top: 16px;
+        border-top: 1px solid #eeeeee;
+    }
+
+    .nav-mobile-action .btn-nav {
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero-container {
+        padding: 0 20px;
+    }
+
+    .hero-card {
+        padding: 40px 32px 24px;
+        min-height: auto;
+        background-position: 70% center;
+        background-image:
+            linear-gradient(90deg,
+                var(--shade-color) 0%,
+                var(--shade-color) 52%,
+                rgba(11, 45, 39, 0.94) 70%,
+                rgba(11, 45, 39, 0.6) 88%,
+                rgba(11, 45, 39, 0.25) 100%),
+            url('../assets/hero-bg.png');
+    }
+
+    .hero-title {
+        font-size: 52px;
+    }
+
+    .hero-features-bar {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+        padding: 20px 24px;
+        margin-top: 36px;
+    }
+
+    .feature-divider {
+        display: none;
+    }
+
+    .feature-item {
+        justify-content: flex-start;
+    }
+}
+
+/*  4. MOBILE (Separate) */
+@media (max-width: 576px) {
+    .nav-container {
+        padding: 12px 18px;
+        position: relative;
+    }
+
+    .nav-logo {
+        height: 52px;
+    }
+
+    .nav-toggle {
+        display: block;
+    }
+
+    .nav-action {
+        display: none;
+    }
+
+    .nav-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #ffffff;
+        flex-direction: column;
+        padding: 20px 18px;
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+        border-top: 1px solid #f0f0f0;
+        z-index: 99;
+    }
+
+    .nav-menu.open {
+        display: flex;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+        width: 100%;
+    }
+
+    .nav-mobile-action {
+        display: block;
+        width: 100%;
+        margin-top: 16px;
+        padding-top: 14px;
+        border-top: 1px solid #eeeeee;
+    }
+
+    .nav-mobile-action .btn-nav {
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero-section {
+        padding: 6px 0 20px;
+    }
+
+    .hero-container {
+        padding: 0 12px;
+    }
+
+    .hero-card {
+        border-radius: 20px;
+        padding: 32px 18px 18px;
+        min-height: auto;
+        background-position: center right;
+        background-image:
+            linear-gradient(180deg,
+                var(--shade-color) 0%,
+                rgba(11, 45, 39, 0.96) 65%,
+                rgba(11, 45, 39, 0.7) 100%),
+            url('../assets/hero-bg.png');
+    }
+
+    .hero-tagline {
+        font-size: 11px;
+        letter-spacing: 1.5px;
+        margin-bottom: 14px;
+    }
+
+    .hero-title {
+        font-size: 38px;
+        line-height: 1.2;
+        margin-bottom: 16px;
+    }
+
+    .hero-desc {
+        font-size: 15px;
+        margin-bottom: 24px;
+        line-height: 1.55;
+    }
+
+    .hero-actions {
+        flex-direction: column;
+        width: 100%;
+        gap: 12px;
+    }
+
+    .btn-white,
+    .btn-outline {
+        width: 100%;
+        text-align: center;
+        padding: 12px 20px;
+    }
+
+    .hero-features-bar {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+        padding: 16px;
+        margin-top: 28px;
+        align-items: flex-start;
+        border-radius: 12px;
+    }
+
+    .feature-divider {
+        display: none;
+    }
+
+    .feature-item {
+        width: 100%;
+        justify-content: flex-start;
+        gap: 10px;
+    }
+
+    .feature-text {
+        font-size: 15.5px;
+        white-space: normal;
+    }
+}
