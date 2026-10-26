@@ -1,5 +1,11 @@
 /* EXTRA EXTRA LARGE DESKTOPS */
-
+@media (max-width: 1800px) {
+    .nav-container,
+    .hero-container,
+    .site-container {
+        max-width: 1600px;
+    }
+}
 
 /* EXTRA LARGE DESKTOPS */
 @media (min-width: 1440px) and (max-width: 1799px) {
@@ -10,13 +16,26 @@
     .hero-title {
         font-size: 60px;
     }
+
+    .about-heading {
+        font-size: 46px;
+    }
+
+    .tech-heading {
+        font-size: 48px;
+    }
+
+    .specialist-name {
+        font-size: 42px;
+    }
 }
 
 /* LARGE DESKTOPS */
 @media (min-width: 1200px) and (max-width: 1439px) {
 
     .nav-container,
-    .hero-container {
+    .hero-container,
+    .site-container {
         padding-left: 28px;
         padding-right: 28px;
     }
@@ -53,6 +72,107 @@
     .feature-text {
         font-size: 15.5px;
     }
+
+    .category-grid {
+        gap: 20px;
+    }
+
+    .category-card {
+        padding: 30px 24px;
+    }
+
+    .about-grid {
+        gap: 48px;
+    }
+
+    .about-heading {
+        font-size: 42px;
+    }
+
+    .about-image-wrap {
+        height: 480px;
+    }
+
+    .treatments-grid {
+        gap: 20px;
+    }
+
+    .concerns-grid {
+        gap: 10px;
+    }
+
+    .concern-box {
+        padding: 14px 10px;
+        min-height: 90px;
+    }
+
+    .concern-title {
+        font-size: 12.5px;
+    }
+
+    .why-grid {
+        gap: 20px;
+    }
+
+    .why-card {
+        padding: 28px 22px;
+    }
+
+    .tech-grid {
+        gap: 48px;
+    }
+
+    .tech-heading {
+        font-size: 44px;
+    }
+
+    .tech-image-wrap {
+        height: 440px;
+    }
+
+    .journey-timeline {
+        gap: 20px;
+    }
+
+    .specialist-card {
+        gap: 32px;
+    }
+
+    .results-grid {
+        gap: 20px;
+    }
+
+    .result-card {
+        height: 290px;
+    }
+
+    .reviews-grid {
+        gap: 20px;
+    }
+
+    .review-card {
+        padding: 30px 24px;
+    }
+
+    .cta-banner-card {
+        padding: 56px 60px;
+    }
+
+    .cta-banner-heading {
+        font-size: 38px;
+    }
+
+    .knowledge-grid {
+        gap: 20px;
+    }
+
+    .booking-grid {
+        gap: 40px;
+    }
+
+    .footer-top-grid {
+        gap: 36px;
+    }
 }
 
 /* 2. MINI DESKTOPS & LANDSCAPE TABLETS (Together) */
@@ -62,7 +182,8 @@
     }
 
     .nav-container,
-    .hero-container {
+    .hero-container,
+    .site-container {
         padding-left: 20px;
         padding-right: 20px;
     }
@@ -116,6 +237,167 @@
     .btn-white,
     .btn-outline {
         font-size: 14.5px;
+    }
+
+    .section-heading {
+        font-size: 36px;
+    }
+
+    .category-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .about-grid {
+        gap: 40px;
+    }
+
+    .about-heading {
+        font-size: 36px;
+    }
+
+    .about-image-wrap {
+        height: 440px;
+    }
+
+    .about-floating-card {
+        padding: 18px 20px;
+    }
+
+    .treatments-grid {
+        gap: 18px;
+    }
+
+    .concerns-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 12px;
+    }
+
+    .concern-box {
+        min-height: 90px;
+    }
+
+    .why-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+    }
+
+    .why-card {
+        padding: 24px 18px;
+    }
+
+    .why-title {
+        font-size: 17px;
+    }
+
+    .tech-grid {
+        gap: 36px;
+    }
+
+    .tech-heading {
+        font-size: 38px;
+    }
+
+    .tech-image-wrap {
+        height: 400px;
+    }
+
+    .journey-timeline {
+        gap: 18px;
+    }
+
+    .journey-step-title {
+        font-size: 15px;
+    }
+
+    .specialist-card {
+        grid-template-columns: 300px 1fr;
+        gap: 28px;
+        padding: 26px;
+    }
+
+    .specialist-name {
+        font-size: 36px;
+    }
+
+    .specialist-image-wrap {
+        height: 340px;
+    }
+
+    .results-section {
+        padding: 70px 0;
+    }
+
+    .results-grid {
+        gap: 18px;
+    }
+
+    .result-card {
+        height: 260px;
+    }
+
+    .reviews-section {
+        padding: 70px 0;
+    }
+
+    .reviews-grid {
+        gap: 18px;
+    }
+
+    .review-card {
+        padding: 28px 22px;
+    }
+
+    .faqs-section {
+        padding: 70px 0 90px;
+    }
+
+    .faq-question {
+        padding: 20px 0;
+        font-size: 16px;
+    }
+
+    .cta-banner-card {
+        padding: 48px 44px;
+    }
+
+    .cta-banner-heading {
+        font-size: 34px;
+    }
+
+    .cta-ring-shape {
+        max-width: 44%;
+        opacity: 0.85;
+    }
+
+    .knowledge-section {
+        padding: 70px 0 60px;
+    }
+
+    .knowledge-grid {
+        gap: 18px;
+    }
+
+    .knowledge-card {
+        padding: 26px 22px;
+    }
+
+    .booking-section {
+        padding: 75px 0 85px;
+    }
+
+    .booking-grid {
+        grid-template-columns: 1fr 1.2fr;
+        gap: 36px;
+    }
+
+    .booking-form-card {
+        padding: 32px 28px;
+    }
+
+    .footer-top-grid {
+        grid-template-columns: 1.2fr 1fr 1fr 1.2fr;
+        gap: 30px;
     }
 }
 
@@ -172,7 +454,8 @@
         text-align: center;
     }
 
-    .hero-container {
+    .hero-container,
+    .site-container {
         padding: 0 20px;
     }
 
@@ -208,6 +491,212 @@
 
     .feature-item {
         justify-content: flex-start;
+    }
+
+    .section-heading {
+        font-size: 34px;
+    }
+
+    .category-section,
+    .about-section,
+    .treatments-section,
+    .why-section,
+    .tech-section,
+    .journey-section,
+    .specialist-section {
+        padding: 60px 0;
+    }
+
+    .category-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 18px;
+    }
+
+    .section-header-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 14px;
+        margin-bottom: 32px;
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .about-content {
+        padding-left: 0;
+    }
+
+    .about-image-wrap {
+        height: 420px;
+    }
+
+    .about-heading {
+        font-size: 36px;
+    }
+
+    .treatments-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .concerns-section {
+        padding: 60px 0;
+    }
+
+    .concerns-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 12px;
+    }
+
+    .why-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 18px;
+    }
+
+    .tech-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .tech-image-wrap {
+        height: 380px;
+    }
+
+    .tech-heading {
+        font-size: 38px;
+    }
+
+    .journey-timeline {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 28px 20px;
+    }
+
+    .journey-timeline::before {
+        display: none;
+    }
+
+    .specialist-card {
+        grid-template-columns: 1fr;
+        gap: 28px;
+        padding: 24px;
+    }
+
+    .specialist-image-wrap {
+        height: 320px;
+    }
+
+    .specialist-content {
+        padding-right: 0;
+    }
+
+    .results-section {
+        padding: 60px 0;
+    }
+
+    .results-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .result-card {
+        height: 270px;
+    }
+
+    .result-card:last-child {
+        grid-column: span 2;
+        max-width: 500px;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .reviews-section {
+        padding: 60px 0;
+    }
+
+    .reviews-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        max-width: 580px;
+        margin: 0 auto;
+    }
+
+    .review-card {
+        padding: 30px 26px;
+    }
+
+    .faqs-section {
+        padding: 60px 0 80px;
+    }
+
+    .faq-question {
+        padding: 18px 0;
+        font-size: 16px;
+    }
+
+    .cta-banner-section {
+        padding: 50px 0 30px;
+    }
+
+    .cta-banner-card {
+        padding: 44px 36px;
+        border-radius: 22px;
+    }
+
+    .cta-banner-heading {
+        font-size: 30px;
+    }
+
+    .cta-ring-shape {
+        max-width: 50%;
+        opacity: 0.6;
+    }
+
+    .knowledge-section {
+        padding: 60px 0;
+    }
+
+    .knowledge-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .knowledge-card:last-child {
+        grid-column: span 2;
+        max-width: 500px;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .booking-section {
+        padding: 65px 0 75px;
+    }
+
+    .booking-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .booking-heading {
+        font-size: 34px;
+    }
+
+    .booking-subtext {
+        max-width: 100%;
+    }
+
+    .booking-form-card {
+        padding: 36px 30px;
+    }
+
+    .site-footer {
+        padding: 65px 0 30px;
+    }
+
+    .footer-top-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 36px;
     }
 }
 
@@ -272,8 +761,9 @@
         padding: 6px 0 20px;
     }
 
-    .hero-container {
-        padding: 0 12px;
+    .hero-container,
+    .site-container {
+        padding: 0 14px;
     }
 
     .hero-card {
@@ -343,5 +833,490 @@
     .feature-text {
         font-size: 15.5px;
         white-space: normal;
+    }
+
+    .category-section,
+    .about-section,
+    .treatments-section,
+    .why-section,
+    .tech-section,
+    .journey-section,
+    .specialist-section {
+        padding: 45px 0;
+    }
+
+    .section-heading {
+        font-size: 28px;
+    }
+
+    .section-header-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+        margin-bottom: 26px;
+    }
+
+    .category-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .category-card {
+        padding: 26px 22px;
+        min-height: auto;
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .about-image-wrap {
+        height: 340px;
+        border-radius: 20px;
+    }
+
+    .about-floating-card {
+        left: 16px;
+        right: 16px;
+        bottom: 16px;
+        padding: 16px 18px;
+    }
+
+    .floating-title {
+        font-size: 14px;
+    }
+
+    .floating-desc {
+        font-size: 12.5px;
+    }
+
+    .about-content {
+        padding-left: 0;
+    }
+
+    .about-heading {
+        font-size: 30px;
+    }
+
+    .about-features-grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+        margin-bottom: 30px;
+    }
+
+    .treatments-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 84vw);
+        grid-template-rows: auto auto;
+        overflow-x: auto;
+        overflow-y: hidden;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        gap: 16px;
+        margin-left: 2px;
+        margin-right: -14px;
+        padding-left: 14px;
+        padding-right: 14px;
+        padding-bottom: 16px;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+    }
+
+    .treatments-grid::-webkit-scrollbar {
+        display: none;
+        width: 0;
+        height: 0;
+    }
+
+    .treatment-card {
+        scroll-snap-align: start;
+        border-radius: 18px;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    /* Column 1: Image 1 on top, White 1 below */
+    .treatments-grid .treatment-card:nth-child(1) {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .treatments-grid .treatment-card:nth-child(4) {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    /* Column 2: Image 2 on top, White 2 below */
+    .treatments-grid .treatment-card:nth-child(2) {
+        grid-column: 2;
+        grid-row: 1;
+    }
+    .treatments-grid .treatment-card:nth-child(5) {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    /* Column 3: Image 3 on top, White 3 below */
+    .treatments-grid .treatment-card:nth-child(3) {
+        grid-column: 3;
+        grid-row: 1;
+    }
+    .treatments-grid .treatment-card:nth-child(6) {
+        grid-column: 3;
+        grid-row: 2;
+    }
+
+    .treatment-card-image {
+        min-height: 290px;
+        padding: 24px 20px 20px;
+    }
+
+    .treatment-card-white {
+        padding: 24px 20px 20px;
+        min-height: 270px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .concerns-section {
+        padding: 50px 0;
+    }
+
+    .concerns-header {
+        margin-bottom: 30px;
+    }
+
+    .concerns-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .concern-box {
+        min-height: 85px;
+        padding: 12px 10px;
+    }
+
+    .concern-title {
+        font-size: 12.5px;
+    }
+
+    .why-grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .why-card {
+        padding: 24px 20px;
+    }
+
+    .tech-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .tech-heading {
+        font-size: 32px;
+    }
+
+    .tech-pills-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .tech-pill {
+        font-size: 13.5px;
+        font-weight: 600;
+        padding: 12px 10px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        line-height: 1.25;
+    }
+
+    .tech-image-wrap {
+        height: 280px;
+        border-radius: 18px;
+    }
+
+    .journey-timeline {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .journey-timeline::before {
+        display: none;
+    }
+
+    .journey-step {
+        padding-left: 24px;
+        border-left: 2px solid #e5e7eb;
+        position: relative;
+    }
+
+    .journey-node {
+        position: absolute;
+        left: -6px;
+        top: 0;
+        margin-bottom: 0;
+    }
+
+    .specialist-card {
+        grid-template-columns: 1fr;
+        padding: 20px;
+        gap: 22px;
+        border-radius: 18px;
+    }
+
+    .specialist-image-wrap {
+        height: 260px;
+        border-radius: 14px;
+    }
+
+    .specialist-name {
+        font-size: 30px;
+    }
+
+    .specialist-content {
+        padding-right: 0;
+    }
+
+    .btn-specialist {
+        width: 100%;
+        text-align: center;
+    }
+
+    .results-section {
+        padding: 48px 0;
+    }
+
+    .results-header {
+        margin-bottom: 30px;
+    }
+
+    .results-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+        margin-bottom: 24px;
+    }
+
+    .result-card {
+        height: 230px;
+        border-radius: 14px;
+    }
+
+    .result-badge {
+        font-size: 12px;
+        padding: 6px 16px;
+        bottom: 12px;
+    }
+
+    .results-disclaimer {
+        padding: 12px 16px;
+        border-radius: 8px;
+    }
+
+    .results-disclaimer p {
+        font-size: 12px;
+    }
+
+    .reviews-section {
+        padding: 48px 0;
+    }
+
+    .reviews-header {
+        margin-bottom: 32px;
+    }
+
+    .reviews-grid {
+        display: flex;
+        overflow-x: auto;
+        overflow-y: hidden;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        gap: 16px;
+        margin-left: 2px;
+        margin-right: -14px;
+        padding-left: 14px;
+        padding-right: 14px;
+        padding-bottom: 16px;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+    }
+
+    .reviews-grid::-webkit-scrollbar {
+        display: none;
+        width: 0;
+        height: 0;
+    }
+
+    .review-card {
+        flex: 0 0 84%;
+        max-width: 310px;
+        scroll-snap-align: start;
+        padding: 28px 22px;
+        border-radius: 16px;
+    }
+
+    .review-accent-bar {
+        margin-bottom: 16px;
+    }
+
+    .review-author {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .review-text {
+        font-size: 13.5px;
+        line-height: 1.6;
+    }
+
+    .faqs-section {
+        padding: 48px 0 65px;
+    }
+
+    .faqs-header {
+        margin-bottom: 28px;
+    }
+
+    .faq-question {
+        padding: 16px 0;
+        font-size: 15px;
+    }
+
+    .faq-icon {
+        font-size: 18px;
+    }
+
+    .faq-answer p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .faq-item.active .faq-answer {
+        padding-bottom: 18px;
+    }
+
+    .cta-banner-section {
+        padding: 36px 0 20px;
+    }
+
+    .cta-banner-card {
+        padding: 36px 24px;
+        border-radius: 20px;
+    }
+
+    .cta-banner-heading {
+        font-size: 26px;
+    }
+
+    .cta-banner-desc {
+        font-size: 14px;
+        margin-bottom: 24px;
+    }
+
+    .cta-ring-shape {
+        max-width: 65%;
+        opacity: 0.35;
+    }
+
+    .cta-btn-group {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px;
+    }
+
+    .btn-cta-primary,
+    .btn-cta-secondary {
+        width: 100%;
+        text-align: center;
+    }
+
+    .knowledge-section {
+        padding: 48px 0;
+    }
+
+    .knowledge-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .knowledge-card {
+        padding: 18px 14px 16px;
+        border-radius: 14px;
+        min-height: auto;
+    }
+
+    .knowledge-card:nth-child(odd):last-child {
+        grid-column: span 2;
+        max-width: none;
+        margin: 0;
+    }
+
+    .knowledge-card-top {
+        margin-bottom: 12px;
+    }
+
+    .knowledge-category,
+    .knowledge-tag {
+        font-size: 10px;
+        letter-spacing: 0.5px;
+    }
+
+    .knowledge-title {
+        font-size: 14.5px;
+        line-height: 1.35;
+        margin-bottom: 14px;
+    }
+
+    .knowledge-link {
+        font-size: 12.5px;
+    }
+
+    .booking-section {
+        padding: 48px 0 60px;
+    }
+
+    .booking-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .booking-heading {
+        font-size: 28px;
+    }
+
+    .booking-form-card {
+        padding: 26px 20px;
+        border-radius: 18px;
+    }
+
+    .appointment-form .form-row-2 {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .appointment-form .form-row {
+        margin-bottom: 16px;
+    }
+
+    .site-footer {
+        padding: 55px 0 25px;
+    }
+
+    .footer-top-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+        gap: 12px;
     }
 }

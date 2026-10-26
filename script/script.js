@@ -55,4 +55,56 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
+
+    // Concern Boxes click/touch active state support
+    const concernBoxes = document.querySelectorAll('.concern-box');
+    concernBoxes.forEach(box => {
+        box.addEventListener('click', function(e) {
+            concernBoxes.forEach(b => b.classList.remove('active-preview'));
+            this.classList.add('active-preview');
+        });
+    });
+
+    // FAQ Accordion Toggle
+    const faqQuestions = document.querySelectorAll('.faq-question');
+    faqQuestions.forEach(btn => {
+        btn.addEventListener('click', function() {
+            const item = this.closest('.faq-item');
+            const isOpen = item.classList.contains('active');
+
+            // Close all items
+            document.querySelectorAll('.faq-item').forEach(i => {
+                i.classList.remove('active');
+                const q = i.querySelector('.faq-question');
+                if (q) q.setAttribute('aria-expanded', 'false');
+            });
+
+            // If it wasn't open, open it
+            if (!isOpen) {
+                item.classList.add('active');
+                this.setAttribute('aria-expanded', 'true');
+            }
+        });
+    });
+
+    // Appointment Form Submission Feedback
+    const appointmentForm = document.getElementById('appointmentForm');
+    if (appointmentForm) {
+        appointmentForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            const submitBtn = this.querySelector('.btn-submit-appointment');
+            if (submitBtn) {
+                const originalText = submitBtn.textContent;
+                submitBtn.textContent = 'Request Sent!';
+                submitBtn.style.backgroundColor = '#2F6F5E';
+                setTimeout(() => {
+                    submitBtn.textContent = originalText;
+                    submitBtn.style.backgroundColor = '';
+                    appointmentForm.reset();
+                }, 3000);
+            }
+        });
+    }
 });
+
+
