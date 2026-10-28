@@ -105,6 +105,37 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
+
+    // Intersection Observer for section items scroll reveal (animate__fadeInUp)
+    const animatedElements = document.querySelectorAll('.animate__animated.animate__fadeInUp');
+    
+    if ('IntersectionObserver' in window) {
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px 0px -40px 0px',
+            threshold: 0.08
+        };
+
+        const revealObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate__active');
+                    // After animation finishes, mark as finished to release animation lock for hover effects
+                    entry.target.addEventListener('animationend', () => {
+                        entry.target.classList.add('animate__finished');
+                    }, { once: true });
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        animatedElements.forEach(el => revealObserver.observe(el));
+    } else {
+        // Fallback for older browsers
+        animatedElements.forEach(el => {
+            el.classList.add('animate__active');
+        });
+    }
 });
 
 

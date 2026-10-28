@@ -1933,3 +1933,31 @@ color: #64716D;
 .footer-legal a:hover {
     color: #ffffff;
 }
+
+/* ==========================================================================
+   Scroll Reveal Animations (Animate.css)
+   ========================================================================== */
+.animate__animated.animate__fadeInUp {
+    opacity: 0;
+    -webkit-animation-name: none;
+    animation-name: none;
+}
+
+.animate__animated.animate__fadeInUp.animate__active {
+    opacity: 1;
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+}
+
+.animate__animated.animate__fadeInUp.animate__finished {
+    opacity: 1;
+    -webkit-animation: none !important;
+    animation: none !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .animate__animated.animate__fadeInUp {
+        opacity: 1 !important;
+        animation: none !important;
+    }
+}
