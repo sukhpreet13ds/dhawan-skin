@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TREATMENTS | Dhawan Skin & Laser Clinic</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+        integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+
+    <!-- Header / Navbar Section -->
+    <header class="header">
+        <div class="nav-container">
+            <a href="/" class="nav-brand">
+                <img src="assets/dhawan.png" alt="Dhawan Skin and Laser Clinic" class="nav-logo">
+            </a>
+
+            <!-- Mobile Hamburger Toggle Button -->
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <!-- Navigation Links -->
+            <nav class="nav-menu" id="navMenu">
+                <ul class="nav-list">
+                    <li><a href="/" class="nav-link">Home</a></li>
+                    <li><a href="about-us.html" class="nav-link">About</a></li>
+                    <li><a href="treatments.html" class="nav-link active">Treatments</a></li>
+                    <li><a href="/#results" class="nav-link">Results</a></li>
+                    <li><a href="/#doctor" class="nav-link">Doctor</a></li>
+                    <li><a href="/#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="nav-mobile-action">
+                    <a href="appointment.html" class="btn btn-nav">Book Appointment</a>
+                </div>
+            </nav>
+
+            <!-- Desktop Action Button -->
+            <div class="nav-action">
+                <a href="appointment.html" class="btn btn-nav">Book Appointment</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Hero Section -->
+    <main class="main-content">
+        <section class="hero-section" id="home">
+            <div class="hero-container">
+                <div class="hero-card">
+                    <!-- Hero Main Content -->
+                    <div class="hero-content animate__animated animate__fadeInUp">
+                        <span class="hero-tagline">DHAWAN SKIN AND LASER CLINIC</span>
+                        <h1 class="hero-title">
+                            TREATMENTS
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Treatments Split Booking Panel Section (Screenshot 1) -->
+        <section class="treat-section-further">
+            <div class="site-container">
+                <div class="treat-booking-split animate__animated animate__fadeInUp">
+                    <!-- Left Side: Clinic Branding & Image -->
+                    <div class="treat-left-banner">
+                        <img src="assets/hero-bg.png" alt="Dhawan Skin & Laser Clinic" class="treat-banner-img">
+                        <div class="treat-banner-overlay">
+                            <img src="assets/dhawan.png" alt="Dhawan Clinic" class="treat-banner-logo">
+                            <span class="treat-banner-tagline">DERMATOLOGY &bull; HAIR &bull; LASER &bull; AESTHETICS</span>
+                            <h3 class="treat-banner-quote">Healthy Skin.<br>Stronger Hair.<br>Confident You.</h3>
+                            <div class="treat-banner-features">
+                                <div class="treat-feat-pill"><i class="fa-solid fa-check"></i> Personalized Plans</div>
+                                <div class="treat-feat-pill"><i class="fa-solid fa-check"></i> Advanced Technology</div>
+                                <div class="treat-feat-pill"><i class="fa-solid fa-check"></i> Skin &amp; Hair Expertise</div>
+                                <div class="treat-feat-pill"><i class="fa-solid fa-check"></i> For Men &amp; Women</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Side: Services List & Checkout Bar -->
+                    <div class="treat-right-panel">
+                        <div class="treat-panel-header">
+                            <h2 class="treat-panel-title">Select your service and let our experts take care of the rest.</h2>
+
+                            <!-- Filter Row 1: Target / Gender -->
+                            <div class="treat-filter-row" id="genderFilters">
+                                <button type="button" class="treat-filter-pill active" data-gender="ALL">ALL</button>
+                                <button type="button" class="treat-filter-pill" data-gender="WOMEN">WOMEN</button>
+                                <button type="button" class="treat-filter-pill" data-gender="MEN">MEN</button>
+                            </div>
+
+                            <!-- Filter Row 2: Service Categories (2-3 Filters) -->
+                            <div class="treat-filter-row treat-categories-row" id="categoryFilters">
+                                <button type="button" class="treat-filter-pill treat-cat-pill active" data-cat="ALL">ALL CATEGORIES</button>
+                                <button type="button" class="treat-filter-pill treat-cat-pill" data-cat="SKIN">SKIN</button>
+                                <button type="button" class="treat-filter-pill treat-cat-pill" data-cat="HAIR">HAIR</button>
+                                <button type="button" class="treat-filter-pill treat-cat-pill" data-cat="LASER">LASER &amp; AESTHETICS</button>
+                            </div>
+
+                            <!-- Sticky Mini-Cart Bar -->
+                            <div class="treat-cart-bar" id="treatCartBar">
+                                <div class="treat-cart-info">
+                                    <span class="cart-icon"><i class="fa-solid fa-bag-shopping"></i></span>
+                                    <span class="cart-text" id="treatCartText">0 services in cart</span>
+                                </div>
+                                <a href="appointment.html" class="btn btn-treat-checkout" id="treatCheckoutBtn">CHECKOUT &rarr;</a>
+                            </div>
+                        </div>
+
+                        <!-- Services List by Concern -->
+                        <div class="treat-services-list" id="treatServicesList">
+                            <!-- Category: SKIN -->
+                            <div class="treat-service-category-title" data-cat-header="SKIN">Skin Concerns &amp; Rejuvenation</div>
+
+                            <div class="treat-service-item" data-id="acne-scars" data-cat="SKIN" data-gender="ALL" data-name="Acne Scars Treatment (CO₂ Fractional)" data-duration="60 Min" data-price="3000">
+                                <div class="treat-service-info">
+                                    <h4 class="treat-service-title">Acne Scars Treatment <span class="gender-tag">[Women / Men]</span></h4>
+                                    <div class="treat-service-meta">
+                                        <span class="meta-duration"><i class="fa-regular fa-clock"></i> 60 Min</span>
+                                        <span class="meta-dot">&bull;</span>
+                                        <span class="meta-price">Starting from ₹3,000</span>
+                                    </div>
+                                    <p class="treat-service-desc">CO₂ fractional laser resurfacing for texture &amp; scar remodeling</p>
+                                </div>
+                                <div class="treat-service-action">
+                                    <button type="button" class="btn btn-book-service" data-id="acne-scars">Book Appointment</button>
+                                </div>
+                            </div>
+
+                            <div class="treat-service-item" data-id="pigmentation" data-cat="SKIN" data-gender="ALL" data-name="Laser for Pigmentation & Melasma" data-duration="45 Min" data-price="1600">
+                                <div class="treat-service-info">
+                                    <h4 class="treat-service-title">Pigmentation &amp; Melasma Laser <span class="gender-tag">[Women / Men]</span></h4>
+                                    <div class="treat-service-meta">
+                                        <span class="meta-duration"><i class="fa-regular fa-clock"></i> 45 Min</span>
+                                        <span class="meta-dot">&bull;</span>
+                                        <span class="meta-price">Starting from ₹1,600</span>
+                                    </div>
+                                    <p class="treat-service-desc">Targeted optical care for uneven pigmentation and dark patches</p>
+                                </div>
+                                <div class="treat-service-action">
+                                    <button type="button" class="btn btn-book-service" data-id="pigmentation">Book Appointment</button>
+                                </div>
+                            </div>
+
+                            <div class="treat-service-item" data-id="hydrafacial" data-cat="SKIN" data-gender="ALL" data-name="Hydrafacial Medical Rejuvenation" data-duration="60 Min" data-price="2500">
+                                <div class="treat-service-info">
+                                    <h4 class="treat-service-title">Hydrafacial Rejuvenation <span class="gender-tag">[Women / Men]</span></h4>
+                                    <div class="treat-service-meta">
+                                        <span class="meta-duration"><i class="fa-regular fa-clock"></i> 60 Min</span>
+                                        <span class="meta-dot">&bull;</span>
+                                        <span class="meta-price">Starting from ₹2,500</span>
+                                    </div>
+                                    <p class="treat-service-desc">Multi-step deep extraction, gentle peeling, and rich serum infusion</p>
+                                </div>
+                                <div class="treat-service-action">
+                                    <button type="button" class="btn btn-book-service" data-id="hydrafacial">Book Appointment</button>
+                                </div>
+                            </div>
+
+                            <div class="treat-service-item" data-id="dull-skin" data-cat="SKIN" data-gender="ALL" data-name="Dull Skin & Glow Chemical Peel" data-duration="45 Min" data-price="1800">
+                                <div class="treat-service-info">
+                                    <h4 class="treat-service-title">Dull Skin Glow Treatment <span class="gender-tag">[Women / Men]</span></h4>
+                                    <div class="treat-service-meta">
+                                        <span class="meta-duration"><i class="fa-regular fa-clock"></i> 45 Min</span>
+                                        <span class="meta-dot">&bull;</span>
+                                        <span class="meta-price">Starting from ₹1,800</span>
+                                    </div>
+                                    <p class="treat-service-desc">Clinical peeling agent to revive natural clarity and glow</p>
+                                </div>
+                                <div class="treat-service-action">
+                                    <button type="button" class="btn btn-book-service" data-id="dull-skin">Book Appointment</button>
+                                </div>
+                            </div>
+
+                            <div class="treat-service-item" data-id="burn-scars" data-cat="SKIN" data-gender="ALL" data-name="Burn Scars Resurfacing Therapy" data-duration="60 Min" data-price="2500">
+                                <div class="treat-service-info">
+                                    <h4 class="treat-service-title">Burn Scars Therapy <span class="gender-tag">[Women / Men]</span></h4>
+                                    <div class="treat-service-meta">
+                                        <span class="meta-duration"><i class="fa-regular fa-clock"></i> 60 Min</span>
+                                        <span class="meta-dot">&bull;</span>
+                                        <span class="meta-price">Starting from ₹2,500</span>
+                                    </div>
+                                    <p class="treat-service-desc">Laser tissue softening and fractional remodeling</p>
+                                </div>
+                                <div class="treat-service-action">
+                                    <button type="button" class="btn btn-book-service" data-id="burn-scars">Book Appointment</button>
+                                </div>
+                            </div>
+
+                            <div class="treat-service-item" data-id="skin-tags" data-cat="SKIN" data-gender="ALL" data-name="Skin Tags & Warts RF Removal" data-duration="30 Min" data-price="1200">
+                                <div class="treat-service-info">
+                                    <h4 class="treat-service-title">Skin Tags &amp; Warts Removal <span class="gender-tag">[Women / Men]</span></h4>
+                                    <div class="treat-service-meta">
+                                        <span class="meta-duration"><i class="fa-regular fa-clock"></i> 30 Min</span>
+                                        <span class="meta-dot">&bull;</span>
+                                        <span class="meta-price">Starting from ₹1,200</span>
+                                    </div>
+                                    <p class="treat-service-desc">Radiofrequency gentle excision with minimal healing period</p>
+                                </div>
+                                <div class="treat-service-action">
+                                    <button type="button" class="btn btn-book-service" data-id="skin-tags">Book Appointment</button>
+                                </div>
+                            </div>
+
+                            <!-- Category: HAIR -->
+                            <div class="treat-service-category-title" data-cat-header="HAIR">Hair Restoration &amp; Growth</div>
+
+                            <div class="treat-service-item" data-id="hair-fall" data-cat="HAIR" data-gender="ALL" data-name="Hair Fall Assessment & Clinical Care" data-duration="45 Min" data-price="1500">
+                                <div class="treat-service-info">
+                                    <h4 class="treat-service-title">Hair Fall Evaluation &amp; Care <span class="gender-tag">[Women / Men]</span></h4>
+                                    <div class="treat-service-meta">
+                                        <span class="meta-duration"><i class="fa-regular fa-clock"></i> 45 Min</span>
+                                        <span class="meta-dot">&bull;</span>
+                                        <span class="meta-price">Starting from ₹1,500</span>
+                                    </div>
+                                    <p class="treat-service-desc">Trichoscopy evaluation and personalized medical hair therapy</p>
+                                </div>
+                                <div class="treat-service-action">
+                                    <button type="button" class="btn btn-book-service" data-id="hair-fall">Book Appointment</button>
+                                </div>
+                            </div>
+
+                            <div class="treat-service-item" data-id="gfc-hair" data-cat="HAIR" data-gender="ALL" data-name="GFC Hair Growth Therapy" data-duration="45 Min" data-price="3500">
+                                <div class="treat-service-info">
+                                    <h4 class="treat-service-title">GFC Hair Growth Therapy <span class="gender-tag">[Women / Men]</span></h4>
+                                    <div class="treat-service-meta">
+                                        <span class="meta-duration"><i class="fa-regular fa-clock"></i> 45 Min</span>
+                                        <span class="meta-dot">&bull;</span>
+                                        <span class="meta-price">Starting from ₹3,500</span>
+                                    </div>
+                                    <p class="treat-service-desc">Concentrated growth factors for active hair follicle reactivation</p>
+                                </div>
+                                <div class="treat-service-action">
+                                    <button type="button" class="btn btn-book-service" data-id="gfc-hair">Book Appointment</button>
+                                </div>
+                            </div>
+
+                            <div class="treat-service-item" data-id="beard-shaping" data-cat="HAIR" data-gender="MEN" data-name="Men's Beard Shaping Laser" data-duration="30 Min" data-price="1800">
+                                <div class="treat-service-info">
+                                    <h4 class="treat-service-title">Beard Shaping &amp; Neckline Laser <span class="gender-tag">[Men]</span></h4>
+                                    <div class="treat-service-meta">
+                                        <span class="meta-duration"><i class="fa-regular fa-clock"></i> 30 Min</span>
+                                        <span class="meta-dot">&bull;</span>
+                                        <span class="meta-price">Starting from ₹1,800</span>
+                                    </div>
+                                    <p class="treat-service-desc">Clean contouring and prevention of razor bumps and irritation</p>
+                                </div>
+                                <div class="treat-service-action">
+                                    <button type="button" class="btn btn-book-service" data-id="beard-shaping">Book Appointment</button>
+                                </div>
+                            </div>
+
+                            <!-- Category: LASER & AESTHETICS -->
+                            <div class="treat-service-category-title" data-cat-header="LASER">Laser &amp; Aesthetic Procedures</div>
+
+                            <div class="treat-service-item" data-id="laser-hair" data-cat="LASER" data-gender="WOMEN" data-name="Laser Hair Reduction" data-duration="45 Min" data-price="2500">
+                                <div class="treat-service-info">
+                                    <h4 class="treat-service-title">Laser Hair Reduction <span class="gender-tag">[Women]</span></h4>
+                                    <div class="treat-service-meta">
+                                        <span class="meta-duration"><i class="fa-regular fa-clock"></i> 45 Min</span>
+                                        <span class="meta-dot">&bull;</span>
+                                        <span class="meta-price">Starting from ₹2,500</span>
+                                    </div>
+                                    <p class="treat-service-desc">Long-term unwanted hair reduction with contact cooling</p>
+                                </div>
+                                <div class="treat-service-action">
+                                    <button type="button" class="btn btn-book-service" data-id="laser-hair">Book Appointment</button>
+                                </div>
+                            </div>
+
+                            <div class="treat-service-item" data-id="tattoo-removal" data-cat="LASER" data-gender="ALL" data-name="Laser Tattoo Removal" data-duration="30 Min" data-price="2000">
+                                <div class="treat-service-info">
+                                    <h4 class="treat-service-title">Laser Tattoo Removal <span class="gender-tag">[Women / Men]</span></h4>
+                                    <div class="treat-service-meta">
+                                        <span class="meta-duration"><i class="fa-regular fa-clock"></i> 30 Min</span>
+                                        <span class="meta-dot">&bull;</span>
+                                        <span class="meta-price">Starting from ₹2,000</span>
+                                    </div>
+                                    <p class="treat-service-desc">Precision acoustic shattering of unwanted cosmetic &amp; amateur tattoos</p>
+                                </div>
+                                <div class="treat-service-action">
+                                    <button type="button" class="btn btn-book-service" data-id="tattoo-removal">Book Appointment</button>
+                                </div>
+                            </div>
+
+                            <div class="treat-service-item" data-id="hifu-tightening" data-cat="LASER" data-gender="ALL" data-name="HIFU Skin Tightening" data-duration="60 Min" data-price="4500">
+                                <div class="treat-service-info">
+                                    <h4 class="treat-service-title">Skin Tightening (HIFU) <span class="gender-tag">[Women / Men]</span></h4>
+                                    <div class="treat-service-meta">
+                                        <span class="meta-duration"><i class="fa-regular fa-clock"></i> 60 Min</span>
+                                        <span class="meta-dot">&bull;</span>
+                                        <span class="meta-price">Starting from ₹4,500</span>
+                                    </div>
+                                    <p class="treat-service-desc">High-Intensity Focused Ultrasound for collagen remodeling &amp; firmness</p>
+                                </div>
+                                <div class="treat-service-action">
+                                    <button type="button" class="btn btn-book-service" data-id="hifu-tightening">Book Appointment</button>
+                                </div>
+                            </div>
+
+                            <div class="treat-service-item" data-id="botox" data-cat="LASER" data-gender="ALL" data-name="Botox Expression Lines Care" data-duration="45 Min" data-price="10000">
+                                <div class="treat-service-info">
+                                    <h4 class="treat-service-title">Fine Lines &amp; Botox Care <span class="gender-tag">[Women / Men]</span></h4>
+                                    <div class="treat-service-meta">
+                                        <span class="meta-duration"><i class="fa-regular fa-clock"></i> 45 Min</span>
+                                        <span class="meta-dot">&bull;</span>
+                                        <span class="meta-price">Starting from ₹10,000</span>
+                                    </div>
+                                    <p class="treat-service-desc">Subtle smoothing of forehead creases, frown lines, and crow's feet</p>
+                                </div>
+                                <div class="treat-service-action">
+                                    <button type="button" class="btn btn-book-service" data-id="botox">Book Appointment</button>
+                                </div>
+                            </div>
+
+                            <div class="treat-service-item" data-id="volume-fillers" data-cat="LASER" data-gender="ALL" data-name="Dermal Fillers for Volume Loss" data-duration="60 Min" data-price="12000">
+                                <div class="treat-service-info">
+                                    <h4 class="treat-service-title">Facial Volume Loss / Fillers <span class="gender-tag">[Women / Men]</span></h4>
+                                    <div class="treat-service-meta">
+                                        <span class="meta-duration"><i class="fa-regular fa-clock"></i> 60 Min</span>
+                                        <span class="meta-dot">&bull;</span>
+                                        <span class="meta-price">Starting from ₹12,000</span>
+                                    </div>
+                                    <p class="treat-service-desc">Natural contour restoration for cheeks, smile lines, and under-eyes</p>
+                                </div>
+                                <div class="treat-service-action">
+                                    <button type="button" class="btn btn-book-service" data-id="volume-fillers">Book Appointment</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="site-container">
+            <div class="footer-top-grid">
+                <!-- Col 1: Brand & Bio -->
+                <div class="footer-col footer-col-brand animate__animated animate__fadeInUp">
+                    <img src="assets/footer-logo.png" alt="Dhawan Skin and Laser Clinic" class="footer-logo">
+                    <p class="footer-desc">Professional dermatology, hair restoration, laser and aesthetic care for men and women.</p>
+                </div>
+
+                <!-- Col 2: Quick Links -->
+                <div class="footer-col animate__animated animate__fadeInUp">
+                    <h4 class="footer-title">QUICK LINKS</h4>
+                    <ul class="footer-links">
+                        <li><a href="/#about">About</a></li>
+                        <li><a href="treatments.html">Treatments</a></li>
+                        <li><a href="/#results">Results</a></li>
+                        <li><a href="appointment.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Treatments -->
+                <div class="footer-col animate__animated animate__fadeInUp">
+                    <h4 class="footer-title">TREATMENTS</h4>
+                    <ul class="footer-links">
+                        <li><a href="treatments.html">Skin</a></li>
+                        <li><a href="treatments.html">Hair</a></li>
+                        <li><a href="treatments.html">Laser</a></li>
+                        <li><a href="treatments.html">Aesthetic</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 4: Clinic Details -->
+                <div class="footer-col animate__animated animate__fadeInUp">
+                    <h4 class="footer-title">CLINIC DETAILS</h4>
+                    <div class="footer-details-list">
+                        <p>Muktsar Road, Guru Har Sahai,<br>Distt. Ferozepur (Pb.)</p>
+                        <p>9914610100, 8453213000,<br>8453113000</p>
+                        <p>Mon- Sat: 10:00 am to 7:30 pm</p>
+                        <p><a href="appointment.html" class="footer-cta-link">Request Appointment</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom animate__animated animate__fadeInUp">
+                <p class="footer-copyright">Copyright &copy; 2026 Dhawan Skin and Laser Clinic. All Rights Reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a> &middot;
+                    <a href="#">Terms</a> &middot;
+                    <a href="#">Disclaimer</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script/script.js"></script>
+</body>
+
+</html>

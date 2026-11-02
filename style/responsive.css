@@ -399,6 +399,42 @@
         grid-template-columns: 1.2fr 1fr 1fr 1.2fr;
         gap: 30px;
     }
+
+    /* About Us Page */
+    .about-intro-grid {
+        gap: 40px;
+    }
+
+    .about-roof-grid {
+        gap: 40px;
+    }
+
+    .approach-steps-grid {
+        gap: 16px;
+    }
+
+    .approach-step-card {
+        padding: 24px 18px;
+    }
+
+    /* Treatments, Appointments & Checkout */
+    .treat-booking-split {
+        grid-template-columns: 1fr 1.25fr;
+    }
+
+    .treat-right-panel {
+        padding: 36px 32px;
+    }
+
+    .appoint-layout-grid {
+        grid-template-columns: 1fr 340px;
+        gap: 24px;
+    }
+
+    .checkout-layout-grid {
+        grid-template-columns: 340px 1fr;
+        gap: 24px;
+    }
 }
 
 /* 3. PORTRAIT TABLETS (Separate) */
@@ -697,6 +733,64 @@
     .footer-top-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 36px;
+    }
+
+    /* About Us Page */
+    .about-sub-section {
+        padding: 60px 0;
+    }
+
+    .about-intro-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .about-intro-pillars {
+        grid-template-columns: 1fr;
+    }
+
+    .about-roof-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .approach-steps-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .about-cta-section {
+        padding-bottom: 60px;
+    }
+
+    /* Treatments, Appointments & Checkout */
+    .treat-booking-split {
+        grid-template-columns: 1fr;
+    }
+
+    .treat-left-banner {
+        min-height: 380px;
+    }
+
+    .treat-right-panel {
+        padding: 36px 30px;
+    }
+
+    .appoint-layout-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .appoint-cart-card {
+        position: static;
+        margin-top: 24px;
+    }
+
+    .checkout-layout-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .timings-pills-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -1318,5 +1412,160 @@
         flex-direction: column;
         text-align: center;
         gap: 12px;
+    }
+
+    /* About Us Page */
+    .about-sub-section {
+        padding: 48px 0;
+    }
+
+    .about-intro-grid {
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+
+    .about-intro-badge {
+        position: static;
+        margin-top: 14px;
+    }
+
+    .about-intro-pillars {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .about-intro-lead {
+        font-size: 16px;
+    }
+
+    .about-roof-grid {
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+
+    .about-dept-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .approach-steps-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .approach-step-card {
+        padding: 24px 20px;
+    }
+
+    .about-chips-wrap {
+        gap: 10px;
+    }
+
+    .concern-chip {
+        width: 100%;
+        justify-content: flex-start;
+        padding: 12px 18px;
+        font-size: 14px;
+    }
+
+    .about-cta-section {
+        padding-bottom: 45px;
+    }
+
+    /* Treatments, Appointments & Checkout */
+    .treat-booking-split {
+        grid-template-columns: 1fr;
+        border-radius: 16px;
+    }
+
+    .treat-left-banner {
+        min-height: 290px;
+    }
+
+    .treat-banner-overlay {
+        padding: 32px 24px;
+    }
+
+    .treat-banner-quote {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+    .treat-right-panel {
+        padding: 28px 18px;
+    }
+
+    .treat-panel-title {
+        font-size: 21px;
+    }
+
+    .treat-service-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .btn-book-service {
+        width: 100%;
+        text-align: center;
+    }
+
+    .appoint-layout-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .appoint-accordion-header {
+        padding: 16px 18px;
+    }
+
+    .accordion-title {
+        font-size: 16px;
+    }
+
+    .appoint-accordion-body {
+        padding: 0 18px 12px;
+    }
+
+    .appoint-service-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .btn-add-service {
+        width: 100%;
+        text-align: center;
+    }
+
+    .appoint-cart-card {
+        position: static;
+        margin-top: 20px;
+        padding: 22px 18px;
+    }
+
+    .checkout-layout-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .checkout-summary-card,
+    .checkout-form-card {
+        padding: 24px 18px;
+        border-radius: 16px;
+    }
+
+    .checkout-fields-grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .timings-pills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .promo-input-group {
+        flex-direction: column;
+    }
+
+    .btn-apply-promo {
+        width: 100%;
     }
 }

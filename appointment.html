@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APPOINTMENTS | Dhawan Skin & Laser Clinic</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+        integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+
+    <!-- Header / Navbar Section -->
+    <header class="header">
+        <div class="nav-container">
+            <a href="/" class="nav-brand">
+                <img src="assets/dhawan.png" alt="Dhawan Skin and Laser Clinic" class="nav-logo">
+            </a>
+
+            <!-- Mobile Hamburger Toggle Button -->
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <!-- Navigation Links -->
+            <nav class="nav-menu" id="navMenu">
+                <ul class="nav-list">
+                    <li><a href="/" class="nav-link">Home</a></li>
+                    <li><a href="about-us.html" class="nav-link">About</a></li>
+                    <li><a href="treatments.html" class="nav-link">Treatments</a></li>
+                    <li><a href="/#results" class="nav-link">Results</a></li>
+                    <li><a href="/#doctor" class="nav-link">Doctor</a></li>
+                    <li><a href="/#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="nav-mobile-action">
+                    <a href="appointment.html" class="btn btn-nav">Book Appointment</a>
+                </div>
+            </nav>
+
+            <!-- Desktop Action Button -->
+            <div class="nav-action">
+                <a href="appointment.html" class="btn btn-nav">Book Appointment</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Hero Section -->
+    <main class="main-content">
+        <section class="hero-section" id="home">
+            <div class="hero-container">
+                <div class="hero-card">
+                    <!-- Hero Main Content -->
+                    <div class="hero-content animate__animated animate__fadeInUp">
+                        <span class="hero-tagline">DHAWAN SKIN AND LASER CLINIC</span>
+                        <h1 class="hero-title">
+                            APPOINTMENTS
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Appointments Accordions & Cart Layout Section (Screenshot 2) -->
+        <section class="treat-section-further">
+            <div class="site-container">
+                <!-- Top Filter: FOR ALL / WOMEN / MEN -->
+                <div class="appoint-top-filter animate__animated animate__fadeInUp">
+                    <span class="filter-label">FOR</span>
+                    <div class="treat-filter-row" id="appointGenderFilters">
+                        <button type="button" class="treat-filter-pill active" data-gender="ALL">ALL</button>
+                        <button type="button" class="treat-filter-pill" data-gender="WOMEN">WOMEN</button>
+                        <button type="button" class="treat-filter-pill" data-gender="MEN">MEN</button>
+                    </div>
+                </div>
+
+                <!-- 2-Column Grid: Left Accordions, Right Cart Sidebar -->
+                <div class="appoint-layout-grid animate__animated animate__fadeInUp">
+                    <!-- Left: Category Accordions -->
+                    <div class="appoint-accordions-col">
+                        <!-- Accordion 1: SKIN CARE -->
+                        <div class="appoint-accordion-card open" data-cat="SKIN">
+                            <div class="appoint-accordion-header">
+                                <span class="accordion-title">SKIN CARE &amp; CONCERNS</span>
+                                <span class="accordion-chevron"><i class="fa-solid fa-chevron-down"></i></span>
+                            </div>
+                            <div class="appoint-accordion-body">
+                                <div class="appoint-service-row" data-id="acne-scars" data-gender="ALL" data-name="Acne Scars Treatment (CO₂ Fractional)" data-duration="60 Min" data-price="3000">
+                                    <div class="service-info-wrap">
+                                        <h4 class="service-info-title">Acne Scars Treatment (CO₂ Fractional) <span class="gender-tag">[Women / Men]</span></h4>
+                                        <div class="service-info-meta">
+                                            <span><i class="fa-regular fa-clock"></i> 60 Min</span>
+                                            <span>&bull;</span>
+                                            <strong>₹ 3,000.00</strong>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="btn btn-add-service" data-id="acne-scars">+ ADD</button>
+                                </div>
+
+                                <div class="appoint-service-row" data-id="pigmentation" data-gender="ALL" data-name="Laser for Pigmentation & Melasma" data-duration="45 Min" data-price="1600">
+                                    <div class="service-info-wrap">
+                                        <h4 class="service-info-title">Laser for Pigmentation &amp; Melasma <span class="gender-tag">[Women / Men]</span></h4>
+                                        <div class="service-info-meta">
+                                            <span><i class="fa-regular fa-clock"></i> 45 Min</span>
+                                            <span>&bull;</span>
+                                            <strong>₹ 1,600.00</strong>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="btn btn-add-service" data-id="pigmentation">+ ADD</button>
+                                </div>
+
+                                <div class="appoint-service-row" data-id="hydrafacial" data-gender="ALL" data-name="Hydrafacial Medical Rejuvenation" data-duration="60 Min" data-price="2500">
+                                    <div class="service-info-wrap">
+                                        <h4 class="service-info-title">Hydrafacial Medical Rejuvenation <span class="gender-tag">[Women / Men]</span></h4>
+                                        <div class="service-info-meta">
+                                            <span><i class="fa-regular fa-clock"></i> 60 Min</span>
+                                            <span>&bull;</span>
+                                            <strong>₹ 2,500.00</strong>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="btn btn-add-service" data-id="hydrafacial">+ ADD</button>
+                                </div>
+
+                                <div class="appoint-service-row" data-id="dull-skin" data-gender="ALL" data-name="Dull Skin & Glow Chemical Peel" data-duration="45 Min" data-price="1800">
+                                    <div class="service-info-wrap">
+                                        <h4 class="service-info-title">Dull Skin &amp; Glow Chemical Peel <span class="gender-tag">[Women / Men]</span></h4>
+                                        <div class="service-info-meta">
+                                            <span><i class="fa-regular fa-clock"></i> 45 Min</span>
+                                            <span>&bull;</span>
+                                            <strong>₹ 1,800.00</strong>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="btn btn-add-service" data-id="dull-skin">+ ADD</button>
+                                </div>
+
+                                <div class="appoint-service-row" data-id="burn-scars" data-gender="ALL" data-name="Burn Scars Resurfacing Therapy" data-duration="60 Min" data-price="2500">
+                                    <div class="service-info-wrap">
+                                        <h4 class="service-info-title">Burn Scars Resurfacing Therapy <span class="gender-tag">[Women / Men]</span></h4>
+                                        <div class="service-info-meta">
+                                            <span><i class="fa-regular fa-clock"></i> 60 Min</span>
+                                            <span>&bull;</span>
+                                            <strong>₹ 2,500.00</strong>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="btn btn-add-service" data-id="burn-scars">+ ADD</button>
+                                </div>
+
+                                <div class="appoint-service-row" data-id="skin-tags" data-gender="ALL" data-name="Skin Tags & Warts RF Removal" data-duration="30 Min" data-price="1200">
+                                    <div class="service-info-wrap">
+                                        <h4 class="service-info-title">Skin Tags &amp; Warts RF Removal <span class="gender-tag">[Women / Men]</span></h4>
+                                        <div class="service-info-meta">
+                                            <span><i class="fa-regular fa-clock"></i> 30 Min</span>
+                                            <span>&bull;</span>
+                                            <strong>₹ 1,200.00</strong>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="btn btn-add-service" data-id="skin-tags">+ ADD</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Accordion 2: HAIR CARE -->
+                        <div class="appoint-accordion-card" data-cat="HAIR">
+                            <div class="appoint-accordion-header">
+                                <span class="accordion-title">HAIR CARE &amp; RESTORATION</span>
+                                <span class="accordion-chevron"><i class="fa-solid fa-chevron-down"></i></span>
+                            </div>
+                            <div class="appoint-accordion-body">
+                                <div class="appoint-service-row" data-id="hair-fall" data-gender="ALL" data-name="Hair Fall Assessment & Clinical Care" data-duration="45 Min" data-price="1500">
+                                    <div class="service-info-wrap">
+                                        <h4 class="service-info-title">Hair Fall Assessment &amp; Clinical Care <span class="gender-tag">[Women / Men]</span></h4>
+                                        <div class="service-info-meta">
+                                            <span><i class="fa-regular fa-clock"></i> 45 Min</span>
+                                            <span>&bull;</span>
+                                            <strong>₹ 1,500.00</strong>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="btn btn-add-service" data-id="hair-fall">+ ADD</button>
+                                </div>
+
+                                <div class="appoint-service-row" data-id="gfc-hair" data-gender="ALL" data-name="GFC Hair Growth Therapy" data-duration="45 Min" data-price="3500">
+                                    <div class="service-info-wrap">
+                                        <h4 class="service-info-title">GFC Hair Growth Therapy <span class="gender-tag">[Women / Men]</span></h4>
+                                        <div class="service-info-meta">
+                                            <span><i class="fa-regular fa-clock"></i> 45 Min</span>
+                                            <span>&bull;</span>
+                                            <strong>₹ 3,500.00</strong>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="btn btn-add-service" data-id="gfc-hair">+ ADD</button>
+                                </div>
+
+                                <div class="appoint-service-row" data-id="beard-shaping" data-gender="MEN" data-name="Men's Beard Shaping Laser" data-duration="30 Min" data-price="1800">
+                                    <div class="service-info-wrap">
+                                        <h4 class="service-info-title">Beard Shaping &amp; Neckline Laser <span class="gender-tag">[Men]</span></h4>
+                                        <div class="service-info-meta">
+                                            <span><i class="fa-regular fa-clock"></i> 30 Min</span>
+                                            <span>&bull;</span>
+                                            <strong>₹ 1,800.00</strong>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="btn btn-add-service" data-id="beard-shaping">+ ADD</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Accordion 3: LASER PROCEDURES -->
+                        <div class="appoint-accordion-card" data-cat="LASER">
+                            <div class="appoint-accordion-header">
+                                <span class="accordion-title">LASER PROCEDURES</span>
+                                <span class="accordion-chevron"><i class="fa-solid fa-chevron-down"></i></span>
+                            </div>
+                            <div class="appoint-accordion-body">
+                                <div class="appoint-service-row" data-id="laser-hair" data-gender="WOMEN" data-name="Laser Hair Reduction" data-duration="45 Min" data-price="2500">
+                                    <div class="service-info-wrap">
+                                        <h4 class="service-info-title">Laser Hair Reduction <span class="gender-tag">[Women]</span></h4>
+                                        <div class="service-info-meta">
+                                            <span><i class="fa-regular fa-clock"></i> 45 Min</span>
+                                            <span>&bull;</span>
+                                            <strong>₹ 2,500.00</strong>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="btn btn-add-service" data-id="laser-hair">+ ADD</button>
+                                </div>
+
+                                <div class="appoint-service-row" data-id="tattoo-removal" data-gender="ALL" data-name="Laser Tattoo Removal" data-duration="30 Min" data-price="2000">
+                                    <div class="service-info-wrap">
+                                        <h4 class="service-info-title">Laser Tattoo Removal <span class="gender-tag">[Women / Men]</span></h4>
+                                        <div class="service-info-meta">
+                                            <span><i class="fa-regular fa-clock"></i> 30 Min</span>
+                                            <span>&bull;</span>
+                                            <strong>₹ 2,000.00</strong>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="btn btn-add-service" data-id="tattoo-removal">+ ADD</button>
+                                </div>
+
+                                <div class="appoint-service-row" data-id="hifu-tightening" data-gender="ALL" data-name="HIFU Skin Tightening" data-duration="60 Min" data-price="4500">
+                                    <div class="service-info-wrap">
+                                        <h4 class="service-info-title">HIFU Non-Surgical Skin Tightening <span class="gender-tag">[Women / Men]</span></h4>
+                                        <div class="service-info-meta">
+                                            <span><i class="fa-regular fa-clock"></i> 60 Min</span>
+                                            <span>&bull;</span>
+                                            <strong>₹ 4,500.00</strong>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="btn btn-add-service" data-id="hifu-tightening">+ ADD</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Accordion 4: AESTHETICS -->
+                        <div class="appoint-accordion-card" data-cat="AESTHETICS">
+                            <div class="appoint-accordion-header">
+                                <span class="accordion-title">FACIAL AESTHETICS &amp; ANTI-AGEING</span>
+                                <span class="accordion-chevron"><i class="fa-solid fa-chevron-down"></i></span>
+                            </div>
+                            <div class="appoint-accordion-body">
+                                <div class="appoint-service-row" data-id="botox" data-gender="ALL" data-name="Botox Expression Lines Care" data-duration="45 Min" data-price="10000">
+                                    <div class="service-info-wrap">
+                                        <h4 class="service-info-title">Botox Expression Lines Care <span class="gender-tag">[Women / Men]</span></h4>
+                                        <div class="service-info-meta">
+                                            <span><i class="fa-regular fa-clock"></i> 45 Min</span>
+                                            <span>&bull;</span>
+                                            <strong>₹ 10,000.00</strong>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="btn btn-add-service" data-id="botox">+ ADD</button>
+                                </div>
+
+                                <div class="appoint-service-row" data-id="volume-fillers" data-gender="ALL" data-name="Dermal Fillers for Volume Loss" data-duration="60 Min" data-price="12000">
+                                    <div class="service-info-wrap">
+                                        <h4 class="service-info-title">Dermal Fillers for Volume Loss <span class="gender-tag">[Women / Men]</span></h4>
+                                        <div class="service-info-meta">
+                                            <span><i class="fa-regular fa-clock"></i> 60 Min</span>
+                                            <span>&bull;</span>
+                                            <strong>₹ 12,000.00</strong>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="btn btn-add-service" data-id="volume-fillers">+ ADD</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right: YOUR CART Card (Sticky Sidebar) -->
+                    <div class="appoint-cart-col">
+                        <div class="appoint-cart-card" id="appointCartCard">
+                            <div class="appoint-cart-header">
+                                <h3 class="cart-card-title">YOUR CART</h3>
+                                <span class="cart-badge-count" id="cartBadgeCount">0</span>
+                            </div>
+
+                            <div class="appoint-cart-items" id="appointCartItems">
+                                <!-- Cart items populated dynamically -->
+                                <div class="cart-empty-message">Your cart is currently empty. Please add a treatment.</div>
+                            </div>
+
+                            <div class="appoint-cart-footer">
+                                <div class="appoint-cart-total-row">
+                                    <span>Subtotal</span>
+                                    <strong id="appointCartTotal">₹ 0.00</strong>
+                                </div>
+                                <a href="checkout.html" class="btn btn-proceed-booking" id="proceedToBookingBtn">PROCEED TO BOOKING</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="site-container">
+            <div class="footer-top-grid">
+                <!-- Col 1: Brand & Bio -->
+                <div class="footer-col footer-col-brand animate__animated animate__fadeInUp">
+                    <img src="assets/footer-logo.png" alt="Dhawan Skin and Laser Clinic" class="footer-logo">
+                    <p class="footer-desc">Professional dermatology, hair restoration, laser and aesthetic care for men and women.</p>
+                </div>
+
+                <!-- Col 2: Quick Links -->
+                <div class="footer-col animate__animated animate__fadeInUp">
+                    <h4 class="footer-title">QUICK LINKS</h4>
+                    <ul class="footer-links">
+                        <li><a href="/#about">About</a></li>
+                        <li><a href="treatments.html">Treatments</a></li>
+                        <li><a href="/#results">Results</a></li>
+                        <li><a href="appointment.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Treatments -->
+                <div class="footer-col animate__animated animate__fadeInUp">
+                    <h4 class="footer-title">TREATMENTS</h4>
+                    <ul class="footer-links">
+                        <li><a href="treatments.html">Skin</a></li>
+                        <li><a href="treatments.html">Hair</a></li>
+                        <li><a href="treatments.html">Laser</a></li>
+                        <li><a href="treatments.html">Aesthetic</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 4: Clinic Details -->
+                <div class="footer-col animate__animated animate__fadeInUp">
+                    <h4 class="footer-title">CLINIC DETAILS</h4>
+                    <div class="footer-details-list">
+                        <p>Muktsar Road, Guru Har Sahai,<br>Distt. Ferozepur (Pb.)</p>
+                        <p>9914610100, 8453213000,<br>8453113000</p>
+                        <p>Mon- Sat: 10:00 am to 7:30 pm</p>
+                        <p><a href="appointment.html" class="footer-cta-link">Request Appointment</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom animate__animated animate__fadeInUp">
+                <p class="footer-copyright">Copyright &copy; 2026 Dhawan Skin and Laser Clinic. All Rights Reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a> &middot;
+                    <a href="#">Terms</a> &middot;
+                    <a href="#">Disclaimer</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script/script.js"></script>
+</body>
+
+</html>
