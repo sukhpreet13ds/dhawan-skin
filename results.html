@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESULTS | Dhawan Skin & Laser Clinic</title>
+    <link rel="icon" href="assets/favicon.ico">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+        integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+
+    <!-- Header / Navbar Section -->
+    <header class="header">
+        <div class="nav-container">
+            <a href="/" class="nav-brand">
+                <img src="assets/dhawan.png" alt="Dhawan Skin and Laser Clinic" class="nav-logo">
+            </a>
+
+            <!-- Mobile Hamburger Toggle Button -->
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <!-- Navigation Links -->
+            <nav class="nav-menu" id="navMenu">
+                <ul class="nav-list">
+                    <li><a href="/" class="nav-link">Home</a></li>
+                    <li><a href="about-us.html" class="nav-link">About</a></li>
+                    <li><a href="treatments.html" class="nav-link">Treatments</a></li>
+                    <li><a href="results.html" class="nav-link active">Results</a></li>
+                    <li><a href="doctor.html" class="nav-link">Doctor</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="nav-mobile-action">
+                    <a href="treatments.html" class="btn btn-nav">Book Appointment</a>
+                </div>
+            </nav>
+
+            <!-- Desktop Action Button -->
+            <div class="nav-action">
+                <a href="treatments.html" class="btn btn-nav">Book Appointment</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Hero Section -->
+    <main class="main-content">
+        <section class="hero-section" id="home">
+            <div class="hero-container">
+                <div class="hero-card">
+                    <!-- Hero Main Content -->
+                    <div class="hero-content animate__animated animate__fadeInUp">
+                        <span class="hero-tagline">DHAWAN SKIN AND LASER CLINIC</span>
+                        <h1 class="hero-title">
+                            CLINICAL RESULTS
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Results Section with Clickable Lightbox Gallery -->
+        <section class="results-section-further">
+            <div class="site-container">
+                <div class="results-header text-center animate__animated animate__fadeInUp">
+                    <span class="sub-eyebrow results-sub-eyebrow">TREATMENT RESULTS</span>
+                    <h2 class="section-heading">Real treatments. Visible<br>progress.</h2>
+                    <p class="section-subtext">Click on any case study photo below to examine high-resolution before
+                        &amp; after views.</p>
+                </div>
+
+                <div class="results-grid gallery-results-grid">
+                    <!-- Result 1 -->
+                    <div class="result-card gallery-item animate__animated animate__fadeInUp" data-index="0">
+                        <div class="result-img-container">
+                            <img src="assets/result1.png" alt="Melasma Treatment Before and After" class="result-img">
+                            <div class="result-overlay-zoom">
+                                <span class="zoom-icon"><i class="fa-solid fa-magnifying-glass-plus"></i> View
+                                    Result</span>
+                            </div>
+                        </div>
+                        <div class="result-badge">Melasma Treatment</div>
+                    </div>
+
+                    <!-- Result 2 -->
+                    <div class="result-card gallery-item animate__animated animate__fadeInUp" data-index="1">
+                        <div class="result-img-container">
+                            <img src="assets/result2.png" alt="Acne Scars Treatment Before and After"
+                                class="result-img">
+                            <div class="result-overlay-zoom">
+                                <span class="zoom-icon"><i class="fa-solid fa-magnifying-glass-plus"></i> View
+                                    Result</span>
+                            </div>
+                        </div>
+                        <div class="result-badge">Acne Scars Treatment</div>
+                    </div>
+
+                    <!-- Result 3 -->
+                    <div class="result-card gallery-item animate__animated animate__fadeInUp" data-index="2">
+                        <div class="result-img-container">
+                            <img src="assets/result3.png" alt="Acne Treatment Before and After" class="result-img">
+                            <div class="result-overlay-zoom">
+                                <span class="zoom-icon"><i class="fa-solid fa-magnifying-glass-plus"></i> View
+                                    Result</span>
+                            </div>
+                        </div>
+                        <div class="result-badge">Acne Treatment</div>
+                    </div>
+                </div>
+
+                <!-- Results Disclaimer -->
+                <div class="results-disclaimer animate__animated animate__fadeInUp">
+                    <p><i class="fa-solid fa-circle-info"></i> Results vary from person to person. Treatment suitability
+                        and outcomes depend on individual skin type, medical history, and clinical assessment.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Fullscreen Lightbox Popout Modal -->
+    <div class="lightbox-modal" id="resultsLightbox" aria-hidden="true" role="dialog">
+        <div class="lightbox-backdrop"></div>
+        <div class="lightbox-content-wrap">
+            <button class="lightbox-btn lightbox-close" id="lightboxClose" aria-label="Close modal">&times;</button>
+            <button class="lightbox-btn lightbox-prev" id="lightboxPrev" aria-label="Previous image"><i
+                    class="fa-solid fa-chevron-left"></i></button>
+            <button class="lightbox-btn lightbox-next" id="lightboxNext" aria-label="Next image"><i
+                    class="fa-solid fa-chevron-right"></i></button>
+
+            <div class="lightbox-figure">
+                <img src="" alt="" class="lightbox-img" id="lightboxImg">
+                <div class="lightbox-caption">
+                    <span class="lightbox-title" id="lightboxTitle"></span>
+                    <span class="lightbox-counter" id="lightboxCounter">1 / 3</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="site-container">
+            <div class="footer-top-grid">
+                <!-- Col 1: Brand & Bio -->
+                <div class="footer-col footer-col-brand animate__animated animate__fadeInUp">
+                    <img src="assets/dhawan.png" alt="Dhawan Skin and Laser Clinic" class="footer-logo">
+                    <p class="footer-desc">Professional dermatology, hair restoration, laser and aesthetic care for men
+                        and women.</p>
+                </div>
+
+                <!-- Col 2: Quick Links -->
+                <div class="footer-col animate__animated animate__fadeInUp">
+                    <h4 class="footer-title">QUICK LINKS</h4>
+                    <ul class="footer-links">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="about-us.html">About</a></li>
+                        <li><a href="treatments.html">Treatments</a></li>
+                        <li><a href="results.html">Results</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Treatments -->
+                <div class="footer-col animate__animated animate__fadeInUp">
+                    <h4 class="footer-title">TREATMENTS</h4>
+                    <ul class="footer-links">
+                        <li><a href="treatments.html">Skin</a></li>
+                        <li><a href="treatments.html">Hair</a></li>
+                        <li><a href="treatments.html">Laser</a></li>
+                        <li><a href="treatments.html">Aesthetic</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 4: Clinic Details -->
+                <div class="footer-col animate__animated animate__fadeInUp">
+                    <h4 class="footer-title">CLINIC DETAILS</h4>
+                    <div class="footer-details-list">
+                        <p>Muktsar Road, Guru Har Sahai,<br>Distt. Ferozepur (Pb.)</p>
+                        <p>9914610100, 8453213000,<br>8453113000</p>
+                        <p>Mon- Sat: 10:00 am to 7:30 pm</p>
+                        <p><a href="treatments.html" class="footer-cta-link">Request Appointment</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom animate__animated animate__fadeInUp">
+                <p class="footer-copyright">Copyright &copy; 2026 Dhawan Skin and Laser Clinic. All Rights Reserved.</p>
+                <div class="footer-legal">
+                    <a href="privacy-policy.html">Privacy Policy</a> &middot;
+                    <a href="terms-condition.html">Terms</a> &middot;
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script/script.js"></script>
+</body>
+
+</html>

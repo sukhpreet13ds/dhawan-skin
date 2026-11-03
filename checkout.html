@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CHECKOUT | Dhawan Skin & Laser Clinic</title>
+    <link rel="icon" href="assets/favicon.ico">
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
@@ -33,18 +34,18 @@
                     <li><a href="/" class="nav-link">Home</a></li>
                     <li><a href="about-us.html" class="nav-link">About</a></li>
                     <li><a href="treatments.html" class="nav-link">Treatments</a></li>
-                    <li><a href="/#results" class="nav-link">Results</a></li>
-                    <li><a href="/#doctor" class="nav-link">Doctor</a></li>
-                    <li><a href="/#contact" class="nav-link">Contact</a></li>
+                    <li><a href="results.html" class="nav-link">Results</a></li>
+                    <li><a href="doctor.html" class="nav-link">Doctor</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
                 </ul>
                 <div class="nav-mobile-action">
-                    <a href="appointment.html" class="btn btn-nav">Book Appointment</a>
+                    <a href="treatments.html" class="btn btn-nav">Book Appointment</a>
                 </div>
             </nav>
 
             <!-- Desktop Action Button -->
             <div class="nav-action">
-                <a href="appointment.html" class="btn btn-nav">Book Appointment</a>
+                <a href="treatments.html" class="btn btn-nav">Book Appointment</a>
             </div>
         </div>
     </header>
@@ -109,11 +110,13 @@
                             <div class="checkout-fields-grid">
                                 <div class="checkout-field-group">
                                     <label for="checkoutName">FULL NAME *</label>
-                                    <input type="text" id="checkoutName" name="fullName" placeholder="Your Full Name" required>
+                                    <input type="text" id="checkoutName" name="fullName" placeholder="Your Full Name"
+                                        required>
                                 </div>
                                 <div class="checkout-field-group">
                                     <label for="checkoutMobile">MOBILE NUMBER *</label>
-                                    <input type="tel" id="checkoutMobile" name="mobile" placeholder="10-Digit Number" pattern="[0-9]{10}" required>
+                                    <input type="tel" id="checkoutMobile" name="mobile" placeholder="10-Digit Number"
+                                        pattern="[0-9]{10}" required>
                                 </div>
                                 <div class="checkout-field-group">
                                     <label for="checkoutDate">APPOINTMENT DATE *</label>
@@ -182,15 +185,17 @@
                 <i class="fa-solid fa-calendar-check"></i>
             </div>
             <h3 class="modal-title">Appointment Confirmed!</h3>
-            <p class="modal-text">Thank you for booking with Dhawan Skin &amp; Laser Clinic. Our medical team has reserved your appointment slot.</p>
-            
+            <p class="modal-text">Thank you for booking with Dhawan Skin &amp; Laser Clinic. Our medical team has
+                reserved your appointment slot.</p>
+
             <div class="modal-summary-box" id="modalBookingSummary">
                 <!-- Summary injected dynamically -->
             </div>
 
             <div class="modal-actions">
                 <a href="/" class="btn btn-modal-primary">Return to Home</a>
-                <a href="treatments.html" class="btn btn-modal-primary" style="background-color: var(--button-color);">View Treatments</a>
+                <a href="treatments.html" class="btn btn-modal-primary"
+                    style="background-color: var(--button-color);">View Treatments</a>
             </div>
         </div>
     </div>
@@ -201,14 +206,16 @@
             <div class="footer-top-grid">
                 <!-- Col 1: Brand & Bio -->
                 <div class="footer-col footer-col-brand animate__animated animate__fadeInUp">
-                    <img src="assets/footer-logo.png" alt="Dhawan Skin and Laser Clinic" class="footer-logo">
-                    <p class="footer-desc">Professional dermatology, hair restoration, laser and aesthetic care for men and women.</p>
+                    <img src="assets/dhawan.png" alt="Dhawan Skin and Laser Clinic" class="footer-logo">
+                    <p class="footer-desc">Professional dermatology, hair restoration, laser and aesthetic care for men
+                        and women.</p>
                 </div>
 
                 <!-- Col 2: Quick Links -->
                 <div class="footer-col animate__animated animate__fadeInUp">
                     <h4 class="footer-title">QUICK LINKS</h4>
                     <ul class="footer-links">
+                        <li><a href="/">Home</a></li>
                         <li><a href="/#about">About</a></li>
                         <li><a href="treatments.html">Treatments</a></li>
                         <li><a href="/#results">Results</a></li>
@@ -234,7 +241,7 @@
                         <p>Muktsar Road, Guru Har Sahai,<br>Distt. Ferozepur (Pb.)</p>
                         <p>9914610100, 8453213000,<br>8453113000</p>
                         <p>Mon- Sat: 10:00 am to 7:30 pm</p>
-                        <p><a href="appointment.html" class="footer-cta-link">Request Appointment</a></p>
+                        <p><a href="treatments.html" class="footer-cta-link">Request Appointment</a></p>
                     </div>
                 </div>
             </div>
@@ -243,9 +250,8 @@
             <div class="footer-bottom animate__animated animate__fadeInUp">
                 <p class="footer-copyright">Copyright &copy; 2026 Dhawan Skin and Laser Clinic. All Rights Reserved.</p>
                 <div class="footer-legal">
-                    <a href="#">Privacy Policy</a> &middot;
-                    <a href="#">Terms</a> &middot;
-                    <a href="#">Disclaimer</a>
+                    <a href="privacy-policy.html">Privacy Policy</a> &middot;
+                    <a href="terms-condition.html">Terms</a> &middot;
                 </div>
             </div>
         </div>

@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACT US | Dhawan Skin & Laser Clinic</title>
+    <link rel="icon" href="assets/favicon.ico">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+        integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+
+    <!-- Header / Navbar Section -->
+    <header class="header">
+        <div class="nav-container">
+            <a href="/" class="nav-brand">
+                <img src="assets/dhawan.png" alt="Dhawan Skin and Laser Clinic" class="nav-logo">
+            </a>
+
+            <!-- Mobile Hamburger Toggle Button -->
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <!-- Navigation Links -->
+            <nav class="nav-menu" id="navMenu">
+                <ul class="nav-list">
+                    <li><a href="/" class="nav-link">Home</a></li>
+                    <li><a href="about-us.html" class="nav-link">About</a></li>
+                    <li><a href="treatments.html" class="nav-link">Treatments</a></li>
+                    <li><a href="results.html" class="nav-link">Results</a></li>
+                    <li><a href="doctor.html" class="nav-link">Doctor</a></li>
+                    <li><a href="contact.html" class="nav-link active">Contact</a></li>
+                </ul>
+                <div class="nav-mobile-action">
+                    <a href="treatments.html" class="btn btn-nav">Book Appointment</a>
+                </div>
+            </nav>
+
+            <!-- Desktop Action Button -->
+            <div class="nav-action">
+                <a href="treatments.html" class="btn btn-nav">Book Appointment</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Hero Section -->
+    <main class="main-content">
+        <section class="hero-section" id="home">
+            <div class="hero-container">
+                <div class="hero-card">
+                    <!-- Hero Main Content -->
+                    <div class="hero-content animate__animated animate__fadeInUp">
+                        <span class="hero-tagline">DHAWAN SKIN AND LASER CLINIC</span>
+                        <h1 class="hero-title">
+                            CONTACT US
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section with Details & Form -->
+        <section class="contact-section-further">
+            <div class="site-container">
+                <div class="contact-layout-grid animate__animated animate__fadeInUp">
+                    <!-- Left: Clinic Details -->
+                    <div class="contact-details-panel">
+                        <span class="sub-eyebrow">GET IN TOUCH</span>
+                        <h2 class="contact-panel-heading">Dhawan Skin &amp; Laser Clinic</h2>
+                        <p class="contact-panel-intro">
+                            Have questions or wish to arrange a medical assessment? Reach out to our front desk team via
+                            phone, WhatsApp, or through the inquiry form.
+                        </p>
+
+                        <div class="contact-info-cards-list">
+                            <!-- Company / Clinic -->
+                            <div class="contact-info-card">
+                                <span class="contact-icon"><i class="fa-solid fa-hospital"></i></span>
+                                <div class="contact-text">
+                                    <strong>Company Name</strong>
+                                    <p>Dhawan Skin &amp; Laser Clinic</p>
+                                </div>
+                            </div>
+
+                            <!-- Clinic Address -->
+                            <div class="contact-info-card">
+                                <span class="contact-icon"><i class="fa-solid fa-location-dot"></i></span>
+                                <div class="contact-text">
+                                    <strong>Address</strong>
+                                    <p>Muktsar Road, Guru Har Sahai, Distt. Ferozepur (Pb.)</p>
+                                </div>
+                            </div>
+
+                            <!-- Phone Numbers -->
+                            <div class="contact-info-card">
+                                <span class="contact-icon"><i class="fa-solid fa-phone"></i></span>
+                                <div class="contact-text">
+                                    <strong>Contact Numbers</strong>
+                                    <p>
+                                        <a href="tel:9914610100">9914610100</a>,
+                                        <a href="tel:8453213000">8453213000</a>,
+                                        <a href="tel:8453113000">8453113000</a>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Emails -->
+                            <div class="contact-info-card">
+                                <span class="contact-icon"><i class="fa-solid fa-envelope"></i></span>
+                                <div class="contact-text">
+                                    <strong>Emails</strong>
+                                    <p>
+                                        <a href="mailto:Tigerdhawan44@gmail.com">Tigerdhawan44@gmail.com</a>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Hours -->
+                            <div class="contact-info-card">
+                                <span class="contact-icon"><i class="fa-solid fa-clock"></i></span>
+                                <div class="contact-text">
+                                    <strong>Clinic Timings</strong>
+                                    <p>Monday &ndash; Saturday: 10:00 AM &ndash; 07:30 PM</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Contact Form -->
+                    <div class="contact-form-panel">
+                        <div class="contact-form-header">
+                            <h3 class="form-title">Send Us a Message</h3>
+                            <p class="form-desc">Fill in the details below and our clinic coordinator will connect with
+                                you promptly.</p>
+                        </div>
+
+                        <form class="contact-custom-form" id="contactInquiryForm">
+                            <!-- Name -->
+                            <div class="form-group-item">
+                                <label for="contactFullName">Name *</label>
+                                <input type="text" id="contactFullName" name="name" placeholder="Enter your full name"
+                                    required>
+                            </div>
+
+                            <!-- Email -->
+                            <div class="form-group-item">
+                                <label for="contactEmail">Email *</label>
+                                <input type="email" id="contactEmail" name="email" placeholder="example@domain.com"
+                                    required>
+                            </div>
+
+                            <!-- Mobile Number -->
+                            <div class="form-group-item">
+                                <label for="contactPhone">Mobile Number *</label>
+                                <input type="tel" id="contactPhone" name="phone" placeholder="10-digit mobile number"
+                                    pattern="[0-9]{10}" required>
+                            </div>
+
+                            <!-- Treatments Dropdown -->
+                            <div class="form-group-item">
+                                <label for="contactTreatmentSelect">Treatments *</label>
+                                <select id="contactTreatmentSelect" name="treatment" required>
+                                    <option value="" disabled selected>Select a Treatment or Query</option>
+                                    <optgroup label="Skin Concerns">
+                                        <option value="Acne Scars Treatment (CO₂ Fractional)">Acne Scars Treatment (CO₂
+                                            Fractional)</option>
+                                        <option value="Laser for Pigmentation &amp; Melasma">Laser for Pigmentation
+                                            &amp; Melasma</option>
+                                        <option value="Hydrafacial Medical Rejuvenation">Hydrafacial Medical
+                                            Rejuvenation</option>
+                                        <option value="Dull Skin &amp; Glow Chemical Peel">Dull Skin &amp; Glow Chemical
+                                            Peel</option>
+                                        <option value="Burn Scars Resurfacing Therapy">Burn Scars Resurfacing Therapy
+                                        </option>
+                                        <option value="Skin Tags &amp; Warts RF Removal">Skin Tags &amp; Warts RF
+                                            Removal</option>
+                                    </optgroup>
+                                    <optgroup label="Hair Care">
+                                        <option value="Hair Fall Assessment &amp; Clinical Care">Hair Fall Assessment
+                                            &amp; Clinical Care</option>
+                                        <option value="GFC Hair Growth Therapy">GFC Hair Growth Therapy</option>
+                                        <option value="Men's Beard Shaping Laser">Men's Beard Shaping Laser</option>
+                                    </optgroup>
+                                    <optgroup label="Laser &amp; Aesthetics">
+                                        <option value="Laser Hair Reduction">Laser Hair Reduction</option>
+                                        <option value="Laser Tattoo Removal">Laser Tattoo Removal</option>
+                                        <option value="HIFU Skin Tightening">HIFU Skin Tightening</option>
+                                        <option value="Botox Expression Lines Care">Botox Expression Lines Care</option>
+                                        <option value="Dermal Fillers for Volume Loss">Dermal Fillers for Volume Loss
+                                        </option>
+                                    </optgroup>
+                                    <optgroup label="Other Inquiries">
+                                        <option value="General Query">General Query</option>
+                                    </optgroup>
+                                </select>
+                            </div>
+
+                            <!-- Message -->
+                            <div class="form-group-item">
+                                <label for="contactMessage">Message *</label>
+                                <textarea id="contactMessage" name="message" rows="4"
+                                    placeholder="Describe your question or concern in detail" required></textarea>
+                            </div>
+
+                            <!-- Submit Button -->
+                            <button type="submit" class="btn btn-contact-submit" id="contactSubmitBtn">Submit Message
+                                &rarr;</button>
+
+                            <div class="contact-feedback" id="contactFeedback"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Full Width Interactive Map Section -->
+            <div class="contact-map-wrapper animate__animated animate__fadeInUp">
+                <div class="map-label-strip">
+                    <div class="site-container map-label-container">
+                        <span><i class="fa-solid fa-map-pin"></i> <strong>Location:</strong> Muktsar Road, Guru Har
+                            Sahai, Distt. Ferozepur, Punjab</span>
+                        <a href="https://maps.google.com/?q=Guru+Har+Sahai+Muktsar+Road+Punjab" target="_blank"
+                            rel="noopener noreferrer" class="map-directions-link">Open in Google Maps &rarr;</a>
+                    </div>
+                </div>
+                <div class="map-embed-container">
+                    <iframe title="Dhawan Skin and Laser Clinic Location Map"
+                        src="https://maps.google.com/maps?q=Muktsar%20Road%20Guru%20Har%20Sahai%20Punjab&t=&z=14&ie=UTF8&iwloc=&output=embed"
+                        loading="lazy" allowfullscreen="" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="site-container">
+            <div class="footer-top-grid">
+                <!-- Col 1: Brand & Bio -->
+                <div class="footer-col footer-col-brand animate__animated animate__fadeInUp">
+                    <img src="assets/dhawan.png" alt="Dhawan Skin and Laser Clinic" class="footer-logo">
+                    <p class="footer-desc">Professional dermatology, hair restoration, laser and aesthetic care for men
+                        and women.</p>
+                </div>
+
+                <!-- Col 2: Quick Links -->
+                <div class="footer-col animate__animated animate__fadeInUp">
+                    <h4 class="footer-title">QUICK LINKS</h4>
+                    <ul class="footer-links">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="about-us.html">About</a></li>
+                        <li><a href="treatments.html">Treatments</a></li>
+                        <li><a href="results.html">Results</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Treatments -->
+                <div class="footer-col animate__animated animate__fadeInUp">
+                    <h4 class="footer-title">TREATMENTS</h4>
+                    <ul class="footer-links">
+                        <li><a href="treatments.html">Skin</a></li>
+                        <li><a href="treatments.html">Hair</a></li>
+                        <li><a href="treatments.html">Laser</a></li>
+                        <li><a href="treatments.html">Aesthetic</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 4: Clinic Details -->
+                <div class="footer-col animate__animated animate__fadeInUp">
+                    <h4 class="footer-title">CLINIC DETAILS</h4>
+                    <div class="footer-details-list">
+                        <p>Muktsar Road, Guru Har Sahai,<br>Distt. Ferozepur (Pb.)</p>
+                        <p>9914610100, 8453213000,<br>8453113000</p>
+                        <p>Mon- Sat: 10:00 am to 7:30 pm</p>
+                        <p><a href="treatments.html" class="footer-cta-link">Request Appointment</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom animate__animated animate__fadeInUp">
+                <p class="footer-copyright">Copyright &copy; 2026 Dhawan Skin and Laser Clinic. All Rights Reserved.</p>
+                <div class="footer-legal">
+                    <a href="privacy-policy.html">Privacy Policy</a> &middot;
+                    <a href="terms-condition.html">Terms</a> &middot;
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script/script.js"></script>
+</body>
+
+</html>

@@ -1,5 +1,6 @@
 /* EXTRA EXTRA LARGE DESKTOPS */
 @media (max-width: 1800px) {
+
     .nav-container,
     .hero-container,
     .site-container {
@@ -435,6 +436,19 @@
         grid-template-columns: 340px 1fr;
         gap: 24px;
     }
+
+    /* Results, Doctor & Contact */
+    .doctor-profile-grid {
+        grid-template-columns: 360px 1fr;
+    }
+
+    .doctor-content-wrap {
+        padding: 36px 32px;
+    }
+
+    .contact-layout-grid {
+        gap: 32px;
+    }
 }
 
 /* 3. PORTRAIT TABLETS (Separate) */
@@ -442,6 +456,10 @@
     .nav-container {
         padding: 14px 24px;
         position: relative;
+    }
+
+    .nav-logo {
+        height: 82px;
     }
 
     .nav-toggle {
@@ -490,6 +508,10 @@
         text-align: center;
     }
 
+    .nav-toggle {
+        font-size: 36px;
+    }
+
     .hero-container,
     .site-container {
         padding: 0 20px;
@@ -499,14 +521,8 @@
         padding: 40px 32px 24px;
         min-height: auto;
         background-position: 70% center;
-        background-image:
-            linear-gradient(90deg,
-                var(--shade-color) 0%,
-                var(--shade-color) 52%,
-                rgba(11, 45, 39, 0.94) 70%,
-                rgba(11, 45, 39, 0.6) 88%,
-                rgba(11, 45, 39, 0.25) 100%),
-            url('../assets/hero-bg.png');
+        background-position: center right;
+        background-image: linear-gradient(90deg, var(--shade-color) 0%, var(--shade-color) 34%, rgba(11, 45, 39, 0.94) 48%, rgba(11, 45, 39, 0.6) 70%, rgba(11, 45, 39, 0.25) 100%), url(../assets/hero-bg.png);
     }
 
     .hero-title {
@@ -565,7 +581,7 @@
     }
 
     .about-image-wrap {
-        height: 420px;
+        height: 720px;
     }
 
     .about-heading {
@@ -597,7 +613,7 @@
     }
 
     .tech-image-wrap {
-        height: 380px;
+        height: 732px;
     }
 
     .tech-heading {
@@ -620,7 +636,7 @@
     }
 
     .specialist-image-wrap {
-        height: 320px;
+        height: 720px;
     }
 
     .specialist-content {
@@ -654,7 +670,7 @@
     .reviews-grid {
         grid-template-columns: 1fr;
         gap: 20px;
-        max-width: 580px;
+        max-width: 880px;
         margin: 0 auto;
     }
 
@@ -791,6 +807,55 @@
 
     .timings-pills-grid {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Results, Doctor & Contact */
+    .doctor-profile-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .doctor-image-wrap {
+        min-height: 380px;
+    }
+
+    .doctor-content-wrap {
+        padding: 36px 30px;
+    }
+
+    .contact-layout-grid {
+        grid-template-columns: 1fr;
+        gap: 36px;
+    }
+
+    .contact-details-panel,
+    .contact-form-panel {
+        padding: 36px 30px;
+    }
+
+    .map-embed-container {
+        height: 380px;
+    }
+
+    .lightbox-prev {
+        left: 10px;
+    }
+
+    .lightbox-next {
+        right: 10px;
+    }
+
+    .privacy-section-further {
+        padding: 50px 0 75px;
+    }
+
+    .legal-content {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+
+    .legal-content h2 {
+        font-size: 22px;
+        margin-top: 32px;
     }
 }
 
@@ -1035,6 +1100,7 @@
         grid-column: 1;
         grid-row: 1;
     }
+
     .treatments-grid .treatment-card:nth-child(4) {
         grid-column: 1;
         grid-row: 2;
@@ -1045,6 +1111,7 @@
         grid-column: 2;
         grid-row: 1;
     }
+
     .treatments-grid .treatment-card:nth-child(5) {
         grid-column: 2;
         grid-row: 2;
@@ -1055,6 +1122,7 @@
         grid-column: 3;
         grid-row: 1;
     }
+
     .treatments-grid .treatment-card:nth-child(6) {
         grid-column: 3;
         grid-row: 2;
@@ -1567,5 +1635,120 @@
 
     .btn-apply-promo {
         width: 100%;
+    }
+
+    /* Results, Doctor & Contact */
+    .lightbox-prev {
+        left: 5px;
+        width: 40px;
+        height: 40px;
+        font-size: 15px;
+    }
+
+    .lightbox-next {
+        right: 5px;
+        width: 40px;
+        height: 40px;
+        font-size: 15px;
+    }
+
+    .lightbox-close {
+        top: -45px;
+        right: 0;
+        width: 40px;
+        height: 40px;
+    }
+
+    .lightbox-caption {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+        padding: 14px 18px;
+    }
+
+    .doctor-profile-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .doctor-image-wrap {
+        min-height: 320px;
+    }
+
+    .doctor-content-wrap {
+        padding: 28px 20px;
+    }
+
+    .doctor-name {
+        font-size: 28px;
+    }
+
+    .doctor-credentials-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .contact-layout-grid {
+        grid-template-columns: 1fr;
+        gap: 28px;
+        margin-bottom: 45px;
+    }
+
+    .contact-details-panel,
+    .contact-form-panel {
+        padding: 26px 18px;
+        border-radius: 18px;
+    }
+
+    .contact-panel-heading {
+        font-size: 26px;
+    }
+
+    .map-embed-container {
+        height: 300px;
+    }
+
+    .map-label-container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    /* Privacy Policy & Terms Content Mobile */
+    .privacy-section-further {
+        padding: 40px 0 60px;
+    }
+
+    .legal-content {
+        max-width: 100%;
+    }
+
+    .legal-lead {
+        font-size: 15.5px;
+        line-height: 1.75;
+        margin-bottom: 28px;
+        padding-bottom: 18px;
+    }
+
+    .legal-content h2 {
+        font-size: 20px;
+        margin-top: 28px;
+        margin-bottom: 10px;
+    }
+
+    .legal-content h3 {
+        font-size: 17px;
+        margin-top: 22px;
+        margin-bottom: 8px;
+    }
+
+    .legal-content p,
+    .legal-content ul li {
+        font-size: 14.5px;
+        line-height: 1.7;
+    }
+
+    .legal-content ul {
+        margin-left: 16px;
+        padding-left: 4px;
     }
 }

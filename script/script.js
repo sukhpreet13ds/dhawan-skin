@@ -558,6 +558,128 @@ document.addEventListener('DOMContentLoaded', () => {
 
         renderCheckoutSummary();
     }
+
+    // --------------------------------------------------------------------------
+    // D. Results Page Lightbox Gallery Logic (results.html)
+    // --------------------------------------------------------------------------
+    const resultsLightbox = document.getElementById('resultsLightbox');
+    if (resultsLightbox) {
+        const galleryItems = document.querySelectorAll('.gallery-item');
+        const lightboxImg = document.getElementById('lightboxImg');
+        const lightboxTitle = document.getElementById('lightboxTitle');
+        const lightboxCounter = document.getElementById('lightboxCounter');
+        const lightboxClose = document.getElementById('lightboxClose');
+        const lightboxPrev = document.getElementById('lightboxPrev');
+        const lightboxNext = document.getElementById('lightboxNext');
+        const lightboxBackdrop = resultsLightbox.querySelector('.lightbox-backdrop');
+
+        const galleryData = [
+            { src: 'assets/result1.png', title: 'Melasma Treatment (Before & After)' },
+            { src: 'assets/result2.png', title: 'Acne Scars Treatment (CO₂ Fractional Resurfacing)' },
+            { src: 'assets/result3.png', title: 'Active Acne Treatment (Clinical Therapy)' }
+        ];
+
+        let currentGalleryIndex = 0;
+
+        function showLightboxImage(index) {
+            if (index < 0) index = galleryData.length - 1;
+            if (index >= galleryData.length) index = 0;
+            currentGalleryIndex = index;
+
+            const item = galleryData[currentGalleryIndex];
+            if (lightboxImg) {
+                lightboxImg.src = item.src;
+                lightboxImg.alt = item.title;
+            }
+            if (lightboxTitle) {
+                lightboxTitle.textContent = item.title;
+            }
+            if (lightboxCounter) {
+                lightboxCounter.textContent = `${currentGalleryIndex + 1} / ${galleryData.length}`;
+            }
+            resultsLightbox.classList.add('active');
+            resultsLightbox.setAttribute('aria-hidden', 'false');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox() {
+            resultsLightbox.classList.remove('active');
+            resultsLightbox.setAttribute('aria-hidden', 'true');
+            document.body.style.overflow = '';
+        }
+
+        galleryItems.forEach(item => {
+            item.addEventListener('click', () => {
+                const idx = parseInt(item.getAttribute('data-index'), 10) || 0;
+                showLightboxImage(idx);
+            });
+        });
+
+        if (lightboxClose) {
+            lightboxClose.addEventListener('click', closeLightbox);
+        }
+
+        if (lightboxBackdrop) {
+            lightboxBackdrop.addEventListener('click', closeLightbox);
+        }
+
+        if (lightboxPrev) {
+            lightboxPrev.addEventListener('click', (e) => {
+                e.stopPropagation();
+                showLightboxImage(currentGalleryIndex - 1);
+            });
+        }
+
+        if (lightboxNext) {
+            lightboxNext.addEventListener('click', (e) => {
+                e.stopPropagation();
+                showLightboxImage(currentGalleryIndex + 1);
+            });
+        }
+
+        // Keyboard navigation (Escape, Left, Right arrows)
+        document.addEventListener('keydown', (e) => {
+            if (!resultsLightbox.classList.contains('active')) return;
+            if (e.key === 'Escape') closeLightbox();
+            if (e.key === 'ArrowLeft') showLightboxImage(currentGalleryIndex - 1);
+            if (e.key === 'ArrowRight') showLightboxImage(currentGalleryIndex + 1);
+        });
+    }
+
+    // --------------------------------------------------------------------------
+    // E. Contact Page Form Feedback (contact.html)
+    // --------------------------------------------------------------------------
+    const contactInquiryForm = document.getElementById('contactInquiryForm');
+    if (contactInquiryForm) {
+        contactInquiryForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            const submitBtn = document.getElementById('contactSubmitBtn');
+            const feedback = document.getElementById('contactFeedback');
+            const name = document.getElementById('contactFullName').value.trim();
+
+            if (submitBtn) {
+                const originalText = submitBtn.textContent;
+                submitBtn.disabled = true;
+                submitBtn.textContent = 'Sending Message...';
+                submitBtn.style.backgroundColor = '#2F6F5E';
+
+                setTimeout(() => {
+                    submitBtn.textContent = 'Message Sent Successfully ✓';
+                    if (feedback) {
+                        feedback.style.color = '#1b7a4b';
+                        feedback.innerHTML = `<strong>Thank you, ${name}!</strong> Your inquiry has been received. Our team will contact you shortly.`;
+                    }
+
+                    setTimeout(() => {
+                        contactInquiryForm.reset();
+                        submitBtn.disabled = false;
+                        submitBtn.textContent = originalText;
+                        submitBtn.style.backgroundColor = '';
+                    }, 4000);
+                }, 1200);
+            }
+        });
+    }
 });
 
 
